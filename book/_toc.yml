@@ -1,0 +1,25 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Geography in FDP context
+    chapters:
+    - file: context
+    - file: section1
+    - file: section2
+    - file: section3
+    - file: conclusion
+    - file: acknowledgement
+  - caption: Data assessment strategy
+    chapters:
+    - file: data_context
+    - file: data_section1
+    - file: data_section2
+    - file: data_section3
+    - file: data_section4
+  - caption: Data assessments
+    chapters:
+    - file: DRC_health
+    - file: TCD_refugees
