@@ -8,50 +8,20 @@ Surrounded by pervasive conflicts in neighboring countries, Chad has received la
 ![Overview](docs/images/TCD_Camps_Overview.png)
 ```
 
-``` {tabbed} Amnabak
-![Overview](docs/images/TCD_Camps/output_1.png)
-```
-``` {tabbed} Farchana
-![Overview](docs/images/TCD_Camps/output_2.png)
-```
-``` {tabbed} Goz Amir
-![Overview](docs/images/TCD_Camps/output_3.png)
-```
-``` {tabbed} Kounoungou
-![Overview](docs/images/TCD_Camps/output_4.png)
-```
-``` {tabbed} Oure Cassoni
-![Overview](docs/images/TCD_Camps/output_5.png)
-```
-``` {tabbed} Treguine
-![Overview](docs/images/TCD_Camps/output_6.png)
-```
-``` {tabbed} Bredjing
-![Overview](docs/images/TCD_Camps/output_7.png)
-```
-``` {tabbed} Djabal
-![Overview](docs/images/TCD_Camps/output_8.png)
-```
-``` {tabbed} Gaga
-![Overview](docs/images/TCD_Camps/output_9.png)
-```
-``` {tabbed} Iridimi
-![Overview](docs/images/TCD_Camps/output_10.png)
-```
-``` {tabbed} Mile
-![Overview](docs/images/TCD_Camps/output_11.png)
-```
-``` {tabbed} Touloum
-![Overview](docs/images/TCD_Camps/output_12.png)
-```
 ``` {tabbed} Amboko
 ![Overview](docs/images/TCD_Camps/output_13.png)
+```
+``` {tabbed} Amnabak
+![Overview](docs/images/TCD_Camps/output_1.png)
 ```
 ``` {tabbed} Bekourou
 ![Overview](docs/images/TCD_Camps/output_14.png)
 ```
 ``` {tabbed} Belom
 ![Overview](docs/images/TCD_Camps/output_15.png)
+```
+``` {tabbed} Bredjing
+![Overview](docs/images/TCD_Camps/output_7.png)
 ```
 ``` {tabbed} Daha 1
 ![Overview](docs/images/TCD_Camps/output_16.png)
@@ -62,18 +32,48 @@ Surrounded by pervasive conflicts in neighboring countries, Chad has received la
 ``` {tabbed} Diba (Vom)
 ![Overview](docs/images/TCD_Camps/output_18.png)
 ```
+``` {tabbed} Djabal
+![Overview](docs/images/TCD_Camps/output_8.png)
+```
 ``` {tabbed} Doholo
 ![Overview](docs/images/TCD_Camps/output_19.png)
 ```
 ``` {tabbed} Dosseye
 ![Overview](docs/images/TCD_Camps/output_20.png)
 ```
+``` {tabbed} Farchana
+![Overview](docs/images/TCD_Camps/output_2.png)
+```
+``` {tabbed} Gaga
+![Overview](docs/images/TCD_Camps/output_9.png)
+```
 ``` {tabbed} Gondje
 ![Overview](docs/images/TCD_Camps/output_21.png)
+```
+``` {tabbed} Goz Amir
+![Overview](docs/images/TCD_Camps/output_3.png)
+```
+``` {tabbed} Iridimi
+![Overview](docs/images/TCD_Camps/output_10.png)
+```
+``` {tabbed} Kounoungou
+![Overview](docs/images/TCD_Camps/output_4.png)
+```
+``` {tabbed} Mile
+![Overview](docs/images/TCD_Camps/output_11.png)
 ```
 ``` {tabbed} Moyo
 ![Overview](docs/images/TCD_Camps/output_22.png)
 ```
 ``` {tabbed} N'Djamena
 ![Overview](docs/images/TCD_Camps/output_23.png)
+```
+``` {tabbed} Oure Cassoni
+![Overview](docs/images/TCD_Camps/output_5.png)
+```
+``` {tabbed} Treguine
+![Overview](docs/images/TCD_Camps/output_6.png)
+```
+``` {tabbed} Touloum
+![Overview](docs/images/TCD_Camps/output_12.png)
 ```

@@ -183,6 +183,11 @@ const thebe_selector_output = ".output, .cell_output"
    Chad refugees
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BDA_chad_camp.html">
+   Baseline data assessment and report for Chad camps
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -240,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/worldbank/Geospatial_FDP"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -318,19 +323,19 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="stage-2-and-3-define-data-needs">
 <h1>Stage 2 and 3: Define Data Needs<a class="headerlink" href="#stage-2-and-3-define-data-needs" title="Permalink to this headline">¶</a></h1>
-<p>Once information needs have been defined, we can decide which data items we need. There have been several attempts to generate a complete list of possible data layers for use in humanitarian situations: Nuala Cowan (2013; HGF model), HDX (HDX data grids), van den Homberg et al. (2018), scientific lead of Red Cross NL 510, an interviewee from the World Bank, the data models in use by UNHCR for refugee sites, and the taxonomy from ACAPS made for the Coordinated Data Scramble (CDS). We combined these data information assessments into a combined list through collation and reduction of the various evaluations in Annex 2 ? Geospatial Data Items. The unified list contains 233 data items; for each data item we identified a potential primary source. This assessment is based on the data sources suggested by ACAPS in their taxonomy of data for the CDS, and by our review of the geospatial data items we found on HDX. We mentioned an organization here when it either had contributed many layers of the type in question to HDX, or when it claimed on their self-description on HDX to harbor and curate such data.</p>
+<p>Once information needs have been defined, we can decide which data items we need. There have been several attempts to generate a complete list of possible data layers for use in humanitarian situations: <a class="reference external" href="https://scholarspace.library.gwu.edu/concern/gw_etds/k3569440g">Nuala Cowan (2013; HGF model)</a>, HDX (<a class="reference external" href="https://data.humdata.org/dashboards/overview-of-data-grids">HDX data grids</a>), <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S009830041730571X?via%3Dihub">van den Homberg et al. (2018)</a>, scientific lead of Red Cross NL 510, an interviewee from the World Bank, the data models in use by <a class="reference external" href="https://gis.unhcr.org/arcgis/rest/services/site_mapping/">UNHCR for refugee sites</a>, and the taxonomy from ACAPS made for the <a class="reference external" href="https://humanitarian.atlassian.net/wiki/spaces/imtoolbox/pages/61800455/Coordinated+Data+Scramble">Coordinated Data Scramble (CDS)</a>. We combined these data information assessments into a combined list through collation and reduction of the various evaluations in Annex 2 - Geospatial Data Items. The unified list contains 233 data items; for each data item we identified a potential primary source. This assessment is based on the data sources suggested by ACAPS in their taxonomy of data for the CDS, and by our review of the geospatial data items we found on HDX. We mentioned an organization here when it either had contributed many layers of the type in question to HDX, or when it claimed on their self-description on HDX to harbor and curate such data.</p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="stage-3-identify-data-sources">
 <h1>Stage 3: Identify Data Sources<a class="headerlink" href="#stage-3-identify-data-sources" title="Permalink to this headline">¶</a></h1>
-<p>The third step in the process is data assembly and gap analysis: check each layer for geographic completeness, geometric accuracy, attribute correctness, and timeliness. A useful protocol for this process has been provided by Mapaction and can be accessed here - protocol.
+<p>The third step in the process is data assembly and gap analysis: check each layer for geographic completeness, geometric accuracy, attribute correctness, and timeliness. A useful protocol for this process has been provided by Mapaction and can be accessed here - <a class="reference external" href="https://guides.mapaction.org/receiving-data">protocol</a>.
 In many humanitarian and development projects, the first source for data is OpenStreetMap; table 1 provides a breakdown of what data can be found in OSM, and what is mappable from satellite imagery into OSM.
 <img alt="Data workflow" src="_images/D_1b_Table1.png" /></p>
 <p>While OSM is an important source for geospatial data, and should be a primary repository for disseminating data, many datasets are not suitable for OSM, or are of low quality. For such data, Annex 2 provides potential resources for these data.
 The heirarchy of available geospatial resources varies by project, agency, and location. However, we propose three principal sources for geospatial data:</p>
 <ol class="simple">
-<li><p>Authoritative government/local sources: whenever possible, working with local government and experts is the most desireable solution. This can be through searches on existing open data portals, or leveraging existing relationships and connections, but authoritative local sources are the best option.</p></li>
-<li><p>OpenStreetMap: get all data you might need from OpenStreetMap. You can use the data mirrored from OSM into HDX, the HOT OSM export tool, or other providers like <a class="reference external" href="http://Geofabrik.de">Geofabrik.de</a>.</p></li>
-<li><p>Alternative sources: Check out other data portals, such as the World Bank?s Development Data Hub or HDX. Annex 2 gives a hint as to where such layers might be found, but further searching is likely necessary. An extensive list of online repositories for geospatial data can be found here. The list was initially compiled by Payne et al. (2012) and updated until 2019.
+<li><p><strong>Authoritative government/local sources</strong>: whenever possible, working with local government and experts is the most desireable solution. This can be through searches on existing open data portals, or leveraging existing relationships and connections, but authoritative local sources are the best option.</p></li>
+<li><p><strong>OpenStreetMap</strong>: get all data you might need from OpenStreetMap. You can use the data mirrored from OSM into HDX, the <a class="reference external" href="https://export.hotosm.org/en/v3/">HOT OSM export tool</a>, or other providers like <a class="reference external" href="https://download.geofabrik.de/">Geofabrik.de</a>.</p></li>
+<li><p><strong>Alternative sources</strong>: Check out other data portals, such as the World Bank’s Development Data Hub or HDX. Annex 2 gives a hint as to where such layers might be found, but further searching is likely necessary. An extensive list of online repositories for geospatial data can be found <a class="reference external" href="https://docs.google.com/spreadsheets/d/1b0N1xW_q8eGUjJVE6RgE3NJb_V-8WHd_ERQE-mQuBGo/edit#gid=0">here</a>. The list was initially compiled by <a class="reference external" href="https://www.tandfonline.com/doi/full/10.1080/15420353.2012.662931">Payne et al. (2012)</a> and updated until 2019.
 Following the data survey, you should have a set of data that needs to be assessed, and other datasets that could not be located.</p></li>
 </ol>
 </div>
