@@ -24,4 +24,4 @@ parts:
     - file: DRC_health
     - file: TCD_refugees
     - file: BDA_chad_camp
-
+    - file: update_chad_camp
