@@ -53,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Post-update OSM data report" href="update_chad_camp.html" />
     <link rel="prev" title="Chad refugees" href="TCD_refugees.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -173,19 +174,48 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="Assessment_context.html">
+   Data Assessment and Improvement
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DRC_results.html">
+     Baseline data assessment and report for Kasai Health Zones
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Baseline data assessment and report for Chad camps
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Baseline data assessment and report for Chad camps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update_chad_camp.html">
+     Post-update OSM data report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -281,6 +311,11 @@ const thebe_selector_output = ".output, .cell_output"
    Quality and currency of available imagery in base maps
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-improvement-maps">
+   Pre-improvement Maps
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -311,6 +346,11 @@ const thebe_selector_output = ".output, .cell_output"
    Quality and currency of available imagery in base maps
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-improvement-maps">
+   Pre-improvement Maps
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -324,23 +364,37 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Baseline data assessment and report for Chad camps<a class="headerlink" href="#baseline-data-assessment-and-report-for-chad-camps" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="quantitative-assessment-of-openstreetmap-osm-completeness">
 <h2>Quantitative assessment of OpenStreetMap (OSM) completeness<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness" title="Permalink to this headline">¶</a></h2>
-<p>The OSM completeness of buildings and highways data is different in each of the refuges.</p>
-<p>In terms of the OSM data coverage; of the 22 refuges evaluated; only 3 refuges had already high coverage of buildings and highways, 15 refuges have partial or low coverage of buildings or highways, and 4 refuges did not have data of buildings or highways.</p>
-<p>Although there are refuges that already have data, the baseline data assessment, showed us that approximately 70% of the data has low quality, due to there is a mismatch between the data and the different satellite imagery or cases where the buildings were mapped with old imagery and need to be aligned to the most current imagery.</p>
-<p><img alt="Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)" src="_images/chad_camp_img1.png" />
-<strong>Figure 1 - Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)</strong></p>
-<p>Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.</p>
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-<p><img alt="misaligned highways" src="_images/chad_camp_img2.png" /></p>
-<p><strong>Figure 2 - Misaligned highways</strong></p>
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-<p><img alt="misaligned and inaccurate buildings" src="_images/chad_camp_img3.png" /></p>
-<p><strong>Figure 3 - Misaligned and inaccurate buildings</strong></p>
-  </div>
+<p>The OSM completeness of buildings and highways data is different in each of the refugee camps:</p>
+<ul class="simple">
+<li><p>3 camps had high coverage of buildings and highways</p></li>
+<li><p>15 camps have partial or low coverage of buildings and highways</p></li>
+<li><p>4 camps did not have data of buildings and highways.</p></li>
+</ul>
+<p>Although 3 camps had high data coverage, the baseline data assessment showed us that approximately 70% of the data has low quality, due to a) mismatch between the data and the baseline satellite imagery or b) the buildings were mapped with old imagery and need to be re-aligned.</p>
+<div class="figure align-default" id="id1">
+<img alt="_images/chad_camp_img1.png" src="_images/chad_camp_img1.png" />
+<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>In table 3, we are doing a summary of the OSM data completeness; the data coverage and the data quality per refuge, this assessment was done separately for buildings and highways, and we have taken the following approach:</p>
+<p>Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="d155a81a-8aa0-4e60-a011-16a278fe9b53" name="20a63654-4d48-44b2-b60b-eaabf1a7b974" type="radio">
+</input><label class="tabbed-label" for="d155a81a-8aa0-4e60-a011-16a278fe9b53">
+Misaligned highways</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id2">
+<img alt="_images/chad_camp_img2.png" src="_images/chad_camp_img2.png" />
+<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">Misaligned highways</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<input id="4d2d7933-8129-4205-bc88-7910c9ece0e7" name="20a63654-4d48-44b2-b60b-eaabf1a7b974" type="radio">
+</input><label class="tabbed-label" for="4d2d7933-8129-4205-bc88-7910c9ece0e7">
+Misaligned and inaccurate buildings</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id3">
+<img alt="_images/chad_camp_img3.png" src="_images/chad_camp_img3.png" />
+<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">Misaligned and inaccurate buildings</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<p>The tables below (table 1 and table 2) summarize the method for our assessment of data quality and coverage</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Levels</strong></p></th>
@@ -382,7 +436,7 @@ const thebe_selector_output = ".output, .cell_output"
 </tbody>
 </table>
 <p><strong>Table 2: OSM data quality levels</strong></p>
-<p>Also, we are adding the stats of buildings and highways found before start the mapping.</p>
+<p>According to the summary table of data quality (table 3), there are 3 camps without buildings, 8 camps with less than 500 buildings and 11 camps with more than a thousand buildings. Concerning highways, there is 1 refuge without highways mapped, 14 camps with less than 30 km of highways, and 7 camps with more than 36 km of highways.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>N°</strong></p></th>
@@ -551,36 +605,30 @@ const thebe_selector_output = ".output, .cell_output"
 </tbody>
 </table>
 <p><strong>Table 3: Summary per refuge of the OSM data completeness</strong></p>
-<p>According to table 3, there are 3 refuges without buildings, 8 refuges with less than 500 buildings and 11 refuges with more than a thousand buildings. And about highways, there is 1 refuge without highways mapped, 14 refuges with less than 30 km of highways, and 7 refuges with more than 36 km of highways.</p>
 </div>
 <div class="section" id="quality-and-currency-of-available-imagery-in-base-maps">
 <h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">¶</a></h2>
-<p>There are different available satellite imagery that can be loaded in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite.</p>
-<p>However, from the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.</p>
-<p>About the currency, the dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.</p>
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-<p><img alt="Bing aerial imagery (old imagery)" src="_images/chad_camp_img4.png" /></p>
-<p><strong>Figure 4 - Bing aerial imagery (old imagery)</strong></p>
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-<p><img alt="Maxar premium (current imagery)" src="_images/chad_camp_img5.png" /></p>
-<p><strong>Figure 5 - Maxar premium (current imagery)</strong></p>
-  </div>
+<p>There are different satellite imagery basemaps available in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite. From the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.</p>
+<p>The dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="2d149c34-d994-4afc-9c52-d6a1f8119dc0" name="0382089b-386d-47cf-80ad-2451e2f7ba98" type="radio">
+</input><label class="tabbed-label" for="2d149c34-d994-4afc-9c52-d6a1f8119dc0">
+Old imagery</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id4">
+<img alt="_images/chad_camp_img4.png" src="_images/chad_camp_img4.png" />
+<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">Bing aerial imagery (old imagery)</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
-<p>Evaluating the quality of the imageries, we saw that Bing and Maxar have low quality in most of the refuges, consequently, the buildings cannot be easily recognized.</p>
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-<p><img alt="Bing aerial imagery" src="_images/chad_camp_img6.png" /></p>
-<p><strong>Figure 6 - Bing aerial imagery</strong></p>
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-<p><img alt="Maxar premium" src="_images/chad_camp_img7.png" /></p>
-<p><strong>Figure 7 - Maxar premium</strong></p>
-  </div>
 </div>
-<p>There are cases in which the data was added using Bing imagery, but since the most current imagery in almost all refuges is Maxar, we are going to align the existing data to Maxar.</p>
-<p>In table 5, we are doing a summary of the most current imagery and its quality per refuge.</p>
+<input id="0dce2955-b806-40d2-a44d-ad8b3eb50b8d" name="0382089b-386d-47cf-80ad-2451e2f7ba98" type="radio">
+</input><label class="tabbed-label" for="0dce2955-b806-40d2-a44d-ad8b3eb50b8d">
+New imagery</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id5">
+<img alt="_images/chad_camp_img5.png" src="_images/chad_camp_img5.png" />
+<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Maxar premium (current imagery)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<p>In most cases the baseline OSM data aligned with Bing imagery, but since the most current imagery in almost all camps is Maxar, we are going to align the existing data to Maxar.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Levels</strong></p></th>
@@ -589,13 +637,13 @@ const thebe_selector_output = ".output, .cell_output"
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>High</strong></p></td>
-<td><p>When zoom in the imagery does not loses its resolution</p></td>
+<td><p>Imagery does not loses its resolution</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Medium</strong></p></td>
-<td><p>When zoom in the imagery loses its resolution but at least we can differentiate the buildings and highways for mapping</p></td>
+<td><p>Imagery loses its resolution but we can differentiate the buildings and highways for mapping</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Low</strong></p></td>
-<td><p>When zoom in the imagery loses its resolution but is difficult to differentiate the buildings for mapping</p></td>
+<td><p>Imagery loses its resolution but is difficult to differentiate the buildings for mapping</p></td>
 </tr>
 </tbody>
 </table>
@@ -745,7 +793,132 @@ const thebe_selector_output = ".output, .cell_output"
 </tbody>
 </table>
 <p><strong>Table 5: Summary per refuge of the most current imagery and its quality</strong></p>
-<p>According to table 5, most refuges have poor quality imagery, so in total there are 17 refuges with poor quality imagery and 5 refuges with medium quality imagery. And the most current imagery is Maxar Premium.</p>
+<p>According to table 5, most camps have poor quality imagery, so in total there are 17 camps with poor quality imagery and 5 camps with medium quality imagery. And the most current imagery is Maxar Premium.</p>
+</div>
+<div class="section" id="pre-improvement-maps">
+<h2>Pre-improvement Maps<a class="headerlink" href="#pre-improvement-maps" title="Permalink to this headline">¶</a></h2>
+<div class="tabbed-set docutils">
+<input checked="checked" id="d9e26dcf-1047-4a96-89bc-04e8044f6d8c" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="d9e26dcf-1047-4a96-89bc-04e8044f6d8c">
+Selected AOIs</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/TCD_Camps_Overview.png" /></p>
+</div>
+<input id="f8406b17-6106-4a10-b544-c6d8b2d53a4e" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="f8406b17-6106-4a10-b544-c6d8b2d53a4e">
+Amboko</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_13.png" /></p>
+</div>
+<input id="6d9afdb0-e762-4dd0-8f13-7bb4a9e044da" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="6d9afdb0-e762-4dd0-8f13-7bb4a9e044da">
+Amnabak</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_1.png" /></p>
+</div>
+<input id="9c03a69d-9a67-45b6-86ad-0a1301159d49" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="9c03a69d-9a67-45b6-86ad-0a1301159d49">
+Bekourou</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_14.png" /></p>
+</div>
+<input id="13f06819-67bb-4d16-8833-9483b56aea46" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="13f06819-67bb-4d16-8833-9483b56aea46">
+Belom</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_15.png" /></p>
+</div>
+<input id="9b18456c-2916-4f85-ae67-cc6fada26f61" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="9b18456c-2916-4f85-ae67-cc6fada26f61">
+Bredjing</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_7.png" /></p>
+</div>
+<input id="8c227700-8a58-4b98-b8fe-64a067df51bc" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="8c227700-8a58-4b98-b8fe-64a067df51bc">
+Daha 1</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_16.png" /></p>
+</div>
+<input id="eeb4243f-93a1-40cb-8763-1d2529577afa" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="eeb4243f-93a1-40cb-8763-1d2529577afa">
+Dembo</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_17.png" /></p>
+</div>
+<input id="004e1264-e7fc-4025-89b7-9e3578d35799" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="004e1264-e7fc-4025-89b7-9e3578d35799">
+Diba (Vom)</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_18.png" /></p>
+</div>
+<input id="c4a1e2a5-10e0-4081-bf91-bbc92ababbfa" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="c4a1e2a5-10e0-4081-bf91-bbc92ababbfa">
+Djabal</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_8.png" /></p>
+</div>
+<input id="6653d3ae-79d0-4816-8e41-41ce0c903071" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="6653d3ae-79d0-4816-8e41-41ce0c903071">
+Doholo</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_19.png" /></p>
+</div>
+<input id="c08ffd9c-8f2f-4436-b716-8d99e6fc6e14" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="c08ffd9c-8f2f-4436-b716-8d99e6fc6e14">
+Dosseye</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_20.png" /></p>
+</div>
+<input id="2ae7307c-f66f-490f-a79b-c0f3c2b1310a" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="2ae7307c-f66f-490f-a79b-c0f3c2b1310a">
+Farchana</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_2.png" /></p>
+</div>
+<input id="f7cb63da-911f-46b0-ab03-94d966da3b09" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="f7cb63da-911f-46b0-ab03-94d966da3b09">
+Gaga</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_9.png" /></p>
+</div>
+<input id="b4c9d871-8762-43a0-9a58-61df42c67417" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="b4c9d871-8762-43a0-9a58-61df42c67417">
+Gondje</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_21.png" /></p>
+</div>
+<input id="0d73cf5b-6f75-4042-8f51-4f8ba7887d9b" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="0d73cf5b-6f75-4042-8f51-4f8ba7887d9b">
+Goz Amir</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_3.png" /></p>
+</div>
+<input id="0ffe115a-e7bb-4768-ad0d-7aa4bffb4174" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="0ffe115a-e7bb-4768-ad0d-7aa4bffb4174">
+Iridimi</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_10.png" /></p>
+</div>
+<input id="c61b3e34-804d-4875-b57a-a2c03beb6486" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="c61b3e34-804d-4875-b57a-a2c03beb6486">
+Kounoungou</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_4.png" /></p>
+</div>
+<input id="b530722b-49bb-4017-86f4-fbe126252fcc" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="b530722b-49bb-4017-86f4-fbe126252fcc">
+Mile</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_11.png" /></p>
+</div>
+<input id="0f30218f-3ea5-48ba-8ca5-dde0c22c5988" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="0f30218f-3ea5-48ba-8ca5-dde0c22c5988">
+Moyo</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_22.png" /></p>
+</div>
+<input id="7e9ac12a-fa57-4525-bab1-e0db046031ee" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="7e9ac12a-fa57-4525-bab1-e0db046031ee">
+N’Djamena</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_23.png" /></p>
+</div>
+<input id="b628a527-7616-45f3-a01c-ed3267c1807c" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="b628a527-7616-45f3-a01c-ed3267c1807c">
+Oure Cassoni</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_5.png" /></p>
+</div>
+<input id="bebec0fa-2ea6-4f4c-a61c-07e7cb888bc1" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="bebec0fa-2ea6-4f4c-a61c-07e7cb888bc1">
+Treguine</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_6.png" /></p>
+</div>
+<input id="187385a7-b035-4f57-bf02-2cc2358eda0b" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
+</input><label class="tabbed-label" for="187385a7-b035-4f57-bf02-2cc2358eda0b">
+Touloum</label><div class="tabbed-content docutils">
+<p><img alt="Overview" src="_images/output_12.png" /></p>
+</div>
+</div>
 </div>
 </div>
 
@@ -780,6 +953,13 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Chad refugees</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="update_chad_camp.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Post-update OSM data report</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

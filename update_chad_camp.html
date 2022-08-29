@@ -173,24 +173,48 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="Assessment_context.html">
+   Data Assessment and Improvement
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DRC_results.html">
+     Baseline data assessment and report for Kasai Health Zones
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="BDA_chad_camp.html">
-   Baseline data assessment and report for Chad camps
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Post-update OSM data report
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="BDA_chad_camp.html">
+     Baseline data assessment and report for Chad camps
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Post-update OSM data report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -357,64 +381,81 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="post-update-osm-data-report">
 <h1>Post-update OSM data report<a class="headerlink" href="#post-update-osm-data-report" title="Permalink to this headline">¶</a></h1>
-<p>In this project We focused on the mapping and improving of buildings and roads in 21 camps of Chad. Also, We added water bodies like rivers and streams but in less quantity since these features were not found in all the camps.</p>
-<p>The mapping was done following the good practices of OSM mapping, mainly during the validation and improvement of the existing data on the map added by other mappers from the OSM community.</p>
+<p>This project focused on mapping and improving buildings and roads in 22 refugee camps in Chad. Additionally, water bodies like rivers and streams were included where they occured; but in less quantity since these features were not found in all the camps.</p>
+<p>The mapping was done following good practices of OSM mapping, mainly during the validation and improvement of the existing data on the map added by other mappers from the OSM community.</p>
 <div class="section" id="mapping-tools">
 <h2>Mapping Tools:<a class="headerlink" href="#mapping-tools" title="Permalink to this headline">¶</a></h2>
-<p>The tools used in the mapping were:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.openstreetmap.org/">OpenStreetMap</a>: A collaborative project to create free and editable maps. All the data were updated directly here.</p></li>
-<li><p><a class="reference external" href="https://josm.openstreetmap.de/">JOSM</a>: The OpenStreetMap editor used by the DevSeed data team to do editions easier and faster.</p></li>
-<li><p><a class="reference external" href="https://github.com/hotosm/tasking-manager">Tasking Manager</a>: A tool that allows us the dividing the Camps into small areas, so each mapper can select a task and avoid conflicts during the mapping.</p></li>
+<li><p><a class="reference external" href="https://josm.openstreetmap.de/">JOSM</a>: The OpenStreetMap editor used by the data team to do edits easier and faster.</p></li>
+<li><p><a class="reference external" href="https://github.com/hotosm/tasking-manager">Tasking Manager</a>: OSM management tool to avoid conflicts during the mapping process.</p></li>
 </ul>
-<p><img alt="Mapping workflow with JOSM editor and a Tasking Manager" src="_images/post_update_chad_camp_1.gif" />
-<strong>Figure 1 - Mapping workflow with JOSM editor and a Tasking Manager</strong></p>
+<div class="figure align-default" id="fig1">
+<img alt="_images/post_update_chad_camp_1.gif" src="_images/post_update_chad_camp_1.gif" />
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Mapping workflow with JOSM editor and a Tasking Manager</span><a class="headerlink" href="#fig1" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="validating-existing-osm-data">
 <h2>Validating existing OSM data<a class="headerlink" href="#validating-existing-osm-data" title="Permalink to this headline">¶</a></h2>
 <p>Previous to the mapping process we found data added by other mappers from the OSM community and most of this data was added trough projects from <a class="reference external" href="https://www.hotosm.org/">Humanitarian OpenStreetMap Team</a>.</p>
-<p>Some of these data had good quality but in most of the camps they had to be improved in order to align them to the most current imagery and improve the buildings and roads shapes.</p>
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-<p><img alt="Data previous to the updating" src="_images/post_update_chad_camp_2.png" /></p>
-<p><strong>Figure 2 - Data previous to the updating</strong></p>
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-<p><img alt="Data after to the updating" src="_images/post_update_chad_camp_3.png" /></p>
-<p><strong>Figure 3 - Data after to the updating</strong></p>
-  </div>
+<p>Some of these data had good quality but in most of the camps data had to be improved to align to the most current imagery and improve the building and road shapes.</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="791afc0b-9b9a-4da4-b749-c722a4414b2d" name="644d71a2-01cd-4329-adb5-b2011195dc0d" type="radio">
+</input><label class="tabbed-label" for="791afc0b-9b9a-4da4-b749-c722a4414b2d">
+Baseline Data</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id1">
+<img alt="_images/post_update_chad_camp_2.png" src="_images/post_update_chad_camp_2.png" />
+<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">Baseline Data</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>Although a most current imagery was selected for the mapping of a camp, based on an evaluation of the different imagery and the area of the camp, We found editions that did not match with any satellite imagery and according to their source they were added by local knowledge. These editions were not changed and they were left as they were found.</p>
-<p><img alt="Buildings and highways added by local knowledge" src="_images/post_update_chad_camp_4.png" />
-<strong>Figure 4 - Buildings and highways added by local knowledge</strong></p>
+</div>
+<input id="c5223fd4-6ada-4aa8-a77a-4394c460af0f" name="644d71a2-01cd-4329-adb5-b2011195dc0d" type="radio">
+</input><label class="tabbed-label" for="c5223fd4-6ada-4aa8-a77a-4394c460af0f">
+Updated</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id2">
+<img alt="_images/post_update_chad_camp_3.png" src="_images/post_update_chad_camp_3.png" />
+<p class="caption"><span class="caption-number">Fig. 42 </span><span class="caption-text">Data after updating</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<p>Although the team relied on the most current imagery basemap (Maxar premium), data were found that did not match with any satellite imagery and according to the source attributes, they were added by local knowledge. These data were not changed and were left as they were found.</p>
+<div class="figure align-default" id="fig4">
+<img alt="_images/post_update_chad_camp_4.png" src="_images/post_update_chad_camp_4.png" />
+<p class="caption"><span class="caption-number">Fig. 43 </span><span class="caption-text">Buildings and highways added by local knowledge</span><a class="headerlink" href="#fig4" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="mapping-of-camps-without-data">
 <h2>Mapping of camps without data<a class="headerlink" href="#mapping-of-camps-without-data" title="Permalink to this headline">¶</a></h2>
 <p>There were camps that did not have any data or the coverage of the existing data was very low. On those camps, We added all the buildings and all types of roads visible on the satellite imagery.</p>
-<p><img alt="Comparison of the Pre-update data VS Post-update data in Treguine Camp" src="_images/post_update_chad_camp_5.gif" />
-<strong>Figure 5 - Comparison of the Pre-update data VS Post-update data in Treguine Camp</strong></p>
+<div class="figure align-default" id="fig5">
+<img alt="_images/post_update_chad_camp_5.gif" src="_images/post_update_chad_camp_5.gif" />
+<p class="caption"><span class="caption-number">Fig. 44 </span><span class="caption-text">Comparison of the Pre-update data VS Post-update data in Treguine Camp</span><a class="headerlink" href="#fig5" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="challenges-in-the-mapping">
 <h2>Challenges in the mapping<a class="headerlink" href="#challenges-in-the-mapping" title="Permalink to this headline">¶</a></h2>
-<p>The main difficulty during the mapping was the low quality of the satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees which did difficult to recognize and map all the buildings.</p>
-<p>We found these cases, mostly in Maxar imagery, while in Bing imagery was easier to recognize and map the buildings, however, since Bing is older than Maxar, We mapped the features with Maxar imagery.</p>
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-<p><img alt="Maxar imagery with trees" src="_images/post_update_chad_camp_6.png" /></p>
-<p><strong>Figure 6 - Maxar imagery with trees</strong></p>
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-<p><img alt="Bing imagery" src="_images/post_update_chad_camp_7.png" /></p>
-<p><strong>Figure 7 - Bing imagery</strong></p>
-  </div>
+<p>The main difficulty during the mapping was the low quality of the baseline satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees.</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="a756ffc9-b2a1-4aff-8544-6ac60d2656d6" name="73fe83f6-e6d0-4b47-95a6-0ed90f41a91a" type="radio">
+</input><label class="tabbed-label" for="a756ffc9-b2a1-4aff-8544-6ac60d2656d6">
+Treed</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id3">
+<img alt="_images/post_update_chad_camp_6.png" src="_images/post_update_chad_camp_6.png" />
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">Maxar imagery with trees</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
-<p><img alt="Trees covering buildings in the area" src="_images/post_update_chad_camp_8.png" /></p>
-<p><strong>Figure 8 - Trees covering buildings in the area</strong></p>
+</div>
+<input id="9db41ac6-94fe-4dd1-9d03-e547b8187671" name="73fe83f6-e6d0-4b47-95a6-0ed90f41a91a" type="radio">
+</input><label class="tabbed-label" for="9db41ac6-94fe-4dd1-9d03-e547b8187671">
+Clear</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id4">
+<img alt="_images/post_update_chad_camp_7.png" src="_images/post_update_chad_camp_7.png" />
+<p class="caption"><span class="caption-number">Fig. 46 </span><span class="caption-text">Bing imagery</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="post-update-stats">
 <h2>Post-update stats<a class="headerlink" href="#post-update-stats" title="Permalink to this headline">¶</a></h2>
-<p>At the end of the mapping, the Data team completed the mapping of 21 from the 22 camps.
-In the below table We can see the final stats of buildings and roads added/improved per each of the camps that were mapped by DevSeed Data Team.</p>
+<p>At the end of the mapping, the data team completed the mapping of 21 of 22 camps. The table contains the final stats of buildings and roads added/improved per camp.</p>
 <table class="colwidths-auto table" >
   <thead>
     <tr class="row-odd">
@@ -439,13 +480,13 @@ In the below table We can see the final stats of buildings and roads added/impro
     </tr>
     <tr class="row-even">
       <th class="head">
-        <p><strong>Previous mapping</strong></p>
+        <p><strong>Baseline</strong></p>
       </th>
       <th class="head">
         <p><strong>After mapping</strong></p>
       </th>
       <th class="head">
-        <p><strong>Previous mapping</strong></p>
+        <p><strong>Baseline</strong></p>
       </th>
       <th class="head">
         <p><strong>After mapping</strong></p>

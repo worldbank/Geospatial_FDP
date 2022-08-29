@@ -28,17 +28,18 @@ Identifying data needs
 An organization engaged in logistics will have  different information needs than an organization with a health-related agenda; long-term planners in sanitation at headquarters require different information than an organization working locally on maintenance of sanitation installations. Understanding data needs is an important first step in the data collection and analysis process, as it is impossible to maintain a repository of information to satisfy all demands.
 
 The Multi-Sector Initial Rapid Assessment [MIRA](https://interagencystandingcommittee.org/system/files/mira_manual_2015.pdf) groups information needs into four components, see figure 2. These groupings encompass information about the scope of the crisis, conditions of the affected population, capacities and response, and humanitarian access. 
-![MIRA 2015](docs/images/D_1a_Fig2.png)
-
-Figure 2: Coordinated assessment approach. From MIRA Coordinated Assessment approach 2015. 
+```{figure} docs/images/D_1a_Fig2.png
+Coordinated assessment approach. From MIRA Coordinated Assessment approach 2015
+```
 
 Ideally, the operational requirements would define a comprehensive and finite list of geospatial data items which need to be collected and curated; we looked at previous attempts to come up with such a list; often by starting with an assessment of required information products:
--	[Mapaction](https://mapaction.org/) have developed a [catalog of map products](https://guides.mapaction.org/) for specific sectors or applications. We compiled their catalog of example products into a table relating the topic or sector to maps and information layers in these maps. This compilation is found in Annex 1 – Information and data needs by Cluster to this report. 
+-	[Mapaction](https://mapaction.org/) have developed a [catalog of map products](https://guides.mapaction.org/) for specific sectors or applications. We compiled their catalog of example products into a table relating the topic or sector to maps and information layers in these maps. This compilation is found in Annex 1 - Information and data needs by Cluster to this report. 
 -	Cowan (2013) developed [A Geospatial Data Management Framework for Humanitarian Response](https://scholarspace.library.gwu.edu/concern/gw_etds/k3569440g). This PhD work included the compilation of a list of geospatial data items needed by humanitarian actors by stakeholder interviews. 
 -	The Coordinated Data Scramble is a process to collect and combine essential datasets, which takes place at the onset of a crisis. The assessed information needs cover a wide range of topics, but a limited set of data items is seen as the most important: it comprises 25 priority datasets, as compiled by [ACAPS](https://www.acaps.org/) (Table 1)
 -	[Van den Homberg et al. (2018)](https://www.sciencedirect.com/science/article/pii/S009830041730571X) identified 71 information needs for disaster response and suggested a methodology to assess their fulfillment as part of data preparedness efforts. 
 -	The Humanitarian Data Exchange platform HDX identifies a set of essential data which they actively monitor called the Data Grids. 
 
+```{table} CDS priority datasets (from ACAPS)
  Theme | Data item 
  ----  | --------- 
  Geography and climate | Adminstrative Boundaries
@@ -64,7 +65,6 @@ Ideally, the operational requirements would define a comprehensive and finite li
  Coordination Structure | Humanitarian Coordination Structure
  Coordination Structure | Contact list
  Lessons Learned | Operational lessons learned from previous disasters
-
- **Table 1: CDS priority datasets (from ACAPS)** 
+```
 
 We combined, collated, and reduced the four assessments referenced above and came up with 233 potential geospatial data items. This does not mean that all possible uses are covered as the sources of for this list mostly have a humanitarian perspective. The combined list is found in **Annex 2 - List of geospatial Data Items.**
