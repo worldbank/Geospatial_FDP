@@ -174,19 +174,36 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="Assessment_context.html">
+   Data Assessment and Improvement
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="BDA_chad_camp.html">
-   Baseline data assessment and report for Chad camps
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="BDA_chad_camp.html">
+     Baseline data assessment and report for Chad camps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update_chad_camp.html">
+     Post-update OSM data report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -442,8 +459,10 @@ Without binding international standards, data managers across various institutio
 <h2>Limited awareness for usefulness of geodata<a class="headerlink" href="#limited-awareness-for-usefulness-of-geodata" title="Permalink to this headline">¶</a></h2>
 <p>Despite the progress made in recent years to advertise the benefits of geospatial data and analysis, and evangelize the value of collecting and disseminating geolocated data, several interviewees expressed that project leaders and staff are often not aware of the benefits of geospatial data collection and analysis.
 This is exemplified by the relatively large number of refugee sites which are still not mapped in detail. UNHCR’s geospatial team manages geospatial data of refugee site infrastructure, such as shelters and WASH installations etc. Some of the mapping is done by UNHCR staff into an internal database, some is done by specialized actors like REACH or CartONG, and other data is mapped by volunteers into OSM. The map in Figure 6 displays data availability at a number of refugee camps; for a number of locations, no detailed data are available.</p>
-<p><img alt="HDX data breakdown" src="_images/D_1a_Fig6.png" /><br />
-<strong>Figure 6: Overview of UNHCR’s sites of People of Concern, with their mapping status. Grey indicates that no data is available. From <a class="reference external" href="https://im.unhcr.org/apps/campmapping/">https://im.unhcr.org/apps/campmapping/</a></strong></p>
+<div class="figure align-default" id="id1">
+<img alt="_images/D_1a_Fig6.png" src="_images/D_1a_Fig6.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Overview of UNHCR’s sites of People of Concern, with their mapping status. Grey indicates that no data is available. From <a class="reference external" href="https://im.unhcr.org/apps/campmapping/">https://im.unhcr.org/apps/campmapping/</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <p>While UNHCR has access to satellite images and could organize mapathons to map features that are visible in them, the bottleneck is to map points of interest and their attributes on the ground. This depends on regional and local staff prioritizing the collection of such information.
 Other interviewees have expressed similar experiences, stating that project managers are not aware of how they can make use of geospatial data: they do not request geospatial information products and cannot state precisely what they need. Therefore, geospatial experts do not know what to deliver to best improve operational, on-the-ground projects. To improve this situation, geospatial products should not be developed for a user, but rather with the user in an iterative loop. Such an agile work procedure is currently also adopted by ESA’s program to develop remote-sensing based information products for global development assistance; example for agile development: Invitation to Tender: <a class="reference external" href="https://eo4society.esa.int/2021/11/03/invitation-to-tender-agile-eo-information-development-gda-aid-marine-environment-and-blue-economy/">“Agile EO information development (GDA-AID): marine environment and blue economy”</a>.</p>
 <div class="section" id="project-specific-requirements-make-data-schema-development-difficult">

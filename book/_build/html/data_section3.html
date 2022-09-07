@@ -174,19 +174,36 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="Assessment_context.html">
+   Data Assessment and Improvement
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="BDA_chad_camp.html">
-   Baseline data assessment and report for Chad camps
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="BDA_chad_camp.html">
+     Baseline data assessment and report for Chad camps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update_chad_camp.html">
+     Post-update OSM data report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -338,12 +355,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Understanding completeness of geographic data can be a tricky process, as there is rarely a true dataset to use for comparison. Instead, comparisons must be made to other, related geospatial data, through triangulation processes. HOT provides tools that show the density of OpenStrretMap features, which might help in identifying areas which need further mapping (Figure 2) as well as a gap analysis tool for building footprints.</p>
 <div class="figure align-default" id="osm-analytics">
 <img alt="_images/D_1b_Fig2.png" src="_images/D_1b_Fig2.png" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Building footprint gap analysis tool from HOT OSM, derived from <a class="reference external" href="https://osm-analytics.org/">https://osm-analytics.org/</a></span><a class="headerlink" href="#osm-analytics" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Building footprint gap analysis tool from HOT OSM, derived from <a class="reference external" href="https://osm-analytics.org/">https://osm-analytics.org/</a></span><a class="headerlink" href="#osm-analytics" title="Permalink to this image">¶</a></p>
 </div>
 <p>The company <a class="reference external" href="https://www.kontur.io/">Kontur</a> built a similar tool named <a class="reference external" href="https://disaster.ninja/">Disaster Ninja</a> to compare the density of features in OpenStreetMap with population density to show which areas are likely under-mapped. It offers a large variety of analytical comparisons (Figure 3).</p>
 <div class="figure align-default" id="disaster-ninja">
 <img alt="_images/D_1b_Fig3.png" src="_images/D_1b_Fig3.png" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Analysis of OSM building density. From <a class="reference external" href="https://disaster.ninja/">Disaster Ninja</a></span><a class="headerlink" href="#disaster-ninja" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Analysis of OSM building density. From <a class="reference external" href="https://disaster.ninja/">Disaster Ninja</a></span><a class="headerlink" href="#disaster-ninja" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="step-2-check-geometrical-accuracy-of-layers">

@@ -2,36 +2,31 @@
 
 ## Quantitative assessment of OpenStreetMap (OSM) completeness
 
-The OSM completeness of buildings and highways data is different in each of the refuges.
+The OSM completeness of buildings and highways data is different in each of the refugee camps: 
+- 3 camps had high coverage of buildings and highways
+- 15 camps have partial or low coverage of buildings and highways
+- 4 camps did not have data of buildings and highways.
 
-In terms of the OSM data coverage; of the 22 refuges evaluated; only 3 refuges had already high coverage of buildings and highways, 15 refuges have partial or low coverage of buildings or highways, and 4 refuges did not have data of buildings or highways.
+Although 3 camps had high data coverage, the baseline data assessment showed us that approximately 70% of the data has low quality, due to a) mismatch between the data and the baseline satellite imagery or b) the buildings were mapped with old imagery and need to be re-aligned.
 
-Although there are refuges that already have data, the baseline data assessment, showed us that approximately 70% of the data has low quality, due to there is a mismatch between the data and the different satellite imagery or cases where the buildings were mapped with old imagery and need to be aligned to the most current imagery.
-
-![Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)](docs/images/BDA_chad_camp/chad_camp_img1.png)
-**Figure 1 - Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)**
+```{figure} docs/images/BDA_chad_camp/chad_camp_img1.png
+Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)
+```
 
 Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.
 
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
+```` {tabbed} Misaligned highways
+```{figure} docs/images/BDA_chad_camp/chad_camp_img2.png
+Misaligned highways
+```
+````
+```` {tabbed} Misaligned and inaccurate buildings
+```{figure} docs/images/BDA_chad_camp/chad_camp_img3.png
+Misaligned and inaccurate buildings
+```
+````
 
-![misaligned highways](docs/images/BDA_chad_camp/chad_camp_img2.png)
-
-**Figure 2 - Misaligned highways**
-
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-
-![misaligned and inaccurate buildings](docs/images/BDA_chad_camp/chad_camp_img3.png)
-
-**Figure 3 - Misaligned and inaccurate buildings**
-
-  </div>
-</div>
-
-In table 3, we are doing a summary of the OSM data completeness; the data coverage and the data quality per refuge, this assessment was done separately for buildings and highways, and we have taken the following approach:
-
+The tables below (table 1 and table 2) summarize the method for our assessment of data quality and coverage
 | **Levels**  | **Description**                                                   |
 | ----------- | ----------------------------------------------------------------- |
 | **High**    | Approximately more than 70% of buildings/highways were mapped     |
@@ -49,7 +44,7 @@ In table 3, we are doing a summary of the OSM data completeness; the data covera
 
 **Table 2: OSM data quality levels**
 
-Also, we are adding the stats of buildings and highways found before start the mapping.
+According to the summary table of data quality (table 3), there are 3 camps without buildings, 8 camps with less than 500 buildings and 11 camps with more than a thousand buildings. Concerning highways, there is 1 refuge without highways mapped, 14 camps with less than 30 km of highways, and 7 camps with more than 36 km of highways.
 
 | **N°** | **Camps**         | **OSM data coverage**                   | **OSM data quality**                  | **Total buildings** | **Total highway Length** |
 | ------ | ----------------- | --------------------------------------- | ------------------------------------- | ------------------- | ------------------------ |
@@ -78,61 +73,33 @@ Also, we are adding the stats of buildings and highways found before start the m
 
 **Table 3: Summary per refuge of the OSM data completeness**
 
-According to table 3, there are 3 refuges without buildings, 8 refuges with less than 500 buildings and 11 refuges with more than a thousand buildings. And about highways, there is 1 refuge without highways mapped, 14 refuges with less than 30 km of highways, and 7 refuges with more than 36 km of highways.
+
 
 ## Quality and currency of available imagery in base maps
 
-There are different available satellite imagery that can be loaded in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite.
+There are different satellite imagery basemaps available in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite. From the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.
 
-However, from the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.
+The dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.
 
-About the currency, the dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.
+````{tabbed} Old imagery
+```{figure} docs/images/BDA_chad_camp/chad_camp_img4.png
+Bing aerial imagery (old imagery)
+```
+````
+````{tabbed} New imagery
+```{figure} docs/images/BDA_chad_camp/chad_camp_img5.png
 
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
+Maxar premium (current imagery)
+```
+````
 
-![Bing aerial imagery (old imagery)](docs/images/BDA_chad_camp/chad_camp_img4.png)
-
-**Figure 4 - Bing aerial imagery (old imagery)**
-
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-
-![Maxar premium (current imagery)](docs/images/BDA_chad_camp/chad_camp_img5.png)
-
-**Figure 5 - Maxar premium (current imagery)**
-
-  </div>
-</div>
-
-Evaluating the quality of the imageries, we saw that Bing and Maxar have low quality in most of the refuges, consequently, the buildings cannot be easily recognized.
-
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-
-![Bing aerial imagery](docs/images/BDA_chad_camp/chad_camp_img6.png)
-
-**Figure 6 - Bing aerial imagery**
-
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-
-![Maxar premium](docs/images/BDA_chad_camp/chad_camp_img7.png)
-
-**Figure 7 - Maxar premium**
-
-  </div>
-</div>
-
-There are cases in which the data was added using Bing imagery, but since the most current imagery in almost all refuges is Maxar, we are going to align the existing data to Maxar.
-
-In table 5, we are doing a summary of the most current imagery and its quality per refuge.
+In most cases the baseline OSM data aligned with Bing imagery, but since the most current imagery in almost all camps is Maxar, we are going to align the existing data to Maxar.
 
 | **Levels** | **Description**                                                                                                        |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **High**   | When zoom in the imagery does not loses its resolution                                                                 |
-| **Medium** | When zoom in the imagery loses its resolution but at least we can differentiate the buildings and highways for mapping |
-| **Low**    | When zoom in the imagery loses its resolution but is difficult to differentiate the buildings for mapping              |
+| **High**   | Imagery does not loses its resolution                                                                 |
+| **Medium** | Imagery loses its resolution but we can differentiate the buildings and highways for mapping |
+| **Low**    | Imagery loses its resolution but is difficult to differentiate the buildings for mapping              |
 
 **Table 4: Imagery quality levels were classified according to their resolution**
 
@@ -163,4 +130,78 @@ In table 5, we are doing a summary of the most current imagery and its quality p
 
 **Table 5: Summary per refuge of the most current imagery and its quality**
 
-According to table 5, most refuges have poor quality imagery, so in total there are 17 refuges with poor quality imagery and 5 refuges with medium quality imagery. And the most current imagery is Maxar Premium.
+According to table 5, most camps have poor quality imagery, so in total there are 17 camps with poor quality imagery and 5 camps with medium quality imagery. And the most current imagery is Maxar Premium.
+
+## Pre-improvement Maps
+``` {tabbed} Selected AOIs
+![Overview](docs/images/TCD_Camps_Overview.png)
+```
+``` {tabbed} Amboko
+![Overview](docs/images/TCD_Camps/output_13.png)
+```
+``` {tabbed} Amnabak
+![Overview](docs/images/TCD_Camps/output_1.png)
+```
+``` {tabbed} Bekourou
+![Overview](docs/images/TCD_Camps/output_14.png)
+```
+``` {tabbed} Belom
+![Overview](docs/images/TCD_Camps/output_15.png)
+```
+``` {tabbed} Bredjing
+![Overview](docs/images/TCD_Camps/output_7.png)
+```
+``` {tabbed} Daha 1
+![Overview](docs/images/TCD_Camps/output_16.png)
+```
+``` {tabbed} Dembo
+![Overview](docs/images/TCD_Camps/output_17.png)
+```
+``` {tabbed} Diba (Vom)
+![Overview](docs/images/TCD_Camps/output_18.png)
+```
+``` {tabbed} Djabal
+![Overview](docs/images/TCD_Camps/output_8.png)
+```
+``` {tabbed} Doholo
+![Overview](docs/images/TCD_Camps/output_19.png)
+```
+``` {tabbed} Dosseye
+![Overview](docs/images/TCD_Camps/output_20.png)
+```
+``` {tabbed} Farchana
+![Overview](docs/images/TCD_Camps/output_2.png)
+```
+``` {tabbed} Gaga
+![Overview](docs/images/TCD_Camps/output_9.png)
+```
+``` {tabbed} Gondje
+![Overview](docs/images/TCD_Camps/output_21.png)
+```
+``` {tabbed} Goz Amir
+![Overview](docs/images/TCD_Camps/output_3.png)
+```
+``` {tabbed} Iridimi
+![Overview](docs/images/TCD_Camps/output_10.png)
+```
+``` {tabbed} Kounoungou
+![Overview](docs/images/TCD_Camps/output_4.png)
+```
+``` {tabbed} Mile
+![Overview](docs/images/TCD_Camps/output_11.png)
+```
+``` {tabbed} Moyo
+![Overview](docs/images/TCD_Camps/output_22.png)
+```
+``` {tabbed} N'Djamena
+![Overview](docs/images/TCD_Camps/output_23.png)
+```
+``` {tabbed} Oure Cassoni
+![Overview](docs/images/TCD_Camps/output_5.png)
+```
+``` {tabbed} Treguine
+![Overview](docs/images/TCD_Camps/output_6.png)
+```
+``` {tabbed} Touloum
+![Overview](docs/images/TCD_Camps/output_12.png)
+```

@@ -3,7 +3,9 @@ Once information needs have been defined, we can decide which data items we need
 # Stage 3: Identify Data Sources
 The third step in the process is data assembly and gap analysis: check each layer for geographic completeness, geometric accuracy, attribute correctness, and timeliness. A useful protocol for this process has been provided by Mapaction and can be accessed here - [protocol](https://guides.mapaction.org/receiving-data). 
 In many humanitarian and development projects, the first source for data is OpenStreetMap; table 1 provides a breakdown of what data can be found in OSM, and what is mappable from satellite imagery into OSM.
-![Data workflow](docs/images/D_1b_Table1.png)
+```{figure} docs/images/D_1b_Table1.png
+OSM feature mapability
+```
 
 While OSM is an important source for geospatial data, and should be a primary repository for disseminating data, many datasets are not suitable for OSM, or are of low quality. For such data, Annex 2 provides potential resources for these data. 
 The heirarchy of available geospatial resources varies by project, agency, and location. However, we propose three principal sources for geospatial data:

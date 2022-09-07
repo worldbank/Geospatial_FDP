@@ -1,86 +1,71 @@
 # Post-update OSM data report
 
-In this project We focused on the mapping and improving of buildings and roads in 21 camps of Chad. Also, We added water bodies like rivers and streams but in less quantity since these features were not found in all the camps.
+This project focused on mapping and improving buildings and roads in 22 refugee camps in Chad. Additionally, water bodies like rivers and streams were included where they occured; but in less quantity since these features were not found in all the camps.
 
-The mapping was done following the good practices of OSM mapping, mainly during the validation and improvement of the existing data on the map added by other mappers from the OSM community.
+The mapping was done following good practices of OSM mapping, mainly during the validation and improvement of the existing data on the map added by other mappers from the OSM community.
 
 ## Mapping Tools:
 
-The tools used in the mapping were:
-
 - [OpenStreetMap](https://www.openstreetmap.org/): A collaborative project to create free and editable maps. All the data were updated directly here.
-- [JOSM](https://josm.openstreetmap.de/): The OpenStreetMap editor used by the DevSeed data team to do editions easier and faster.
-- [Tasking Manager](https://github.com/hotosm/tasking-manager): A tool that allows us the dividing the Camps into small areas, so each mapper can select a task and avoid conflicts during the mapping.
+- [JOSM](https://josm.openstreetmap.de/): The OpenStreetMap editor used by the data team to do edits easier and faster.
+- [Tasking Manager](https://github.com/hotosm/tasking-manager): OSM management tool to avoid conflicts during the mapping process.
 
-![Mapping workflow with JOSM editor and a Tasking Manager](docs/images/update_chat/post_update_chad_camp_1.gif)
-**Figure 1 - Mapping workflow with JOSM editor and a Tasking Manager**
+```{figure} docs/images/update_chat/post_update_chad_camp_1.gif
+:name: fig1
+Mapping workflow with JOSM editor and a Tasking Manager
+```
 
 ## Validating existing OSM data
 
 Previous to the mapping process we found data added by other mappers from the OSM community and most of this data was added trough projects from [Humanitarian OpenStreetMap Team](https://www.hotosm.org/).
 
-Some of these data had good quality but in most of the camps they had to be improved in order to align them to the most current imagery and improve the buildings and roads shapes.
+Some of these data had good quality but in most of the camps data had to be improved to align to the most current imagery and improve the building and road shapes.
+````{tabbed} Baseline Data
+```{figure} docs/images/update_chat/post_update_chad_camp_2.png
+Baseline Data
+```
+````
+````{tabbed} Updated
+```{figure} docs/images/update_chat/post_update_chad_camp_3.png
+Data after updating
+```
+````
 
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
+Although the team relied on the most current imagery basemap (Maxar premium), data were found that did not match with any satellite imagery and according to the source attributes, they were added by local knowledge. These data were not changed and were left as they were found.
 
-![Data previous to the updating](docs/images/update_chat/post_update_chad_camp_2.png)
+```{figure} docs/images/update_chat/post_update_chad_camp_4.png
+:name: fig4
 
-**Figure 2 - Data previous to the updating**
-
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-
-![Data after to the updating](docs/images/update_chat/post_update_chad_camp_3.png)
-
-**Figure 3 - Data after to the updating**
-
-  </div>
-</div>
-
-Although a most current imagery was selected for the mapping of a camp, based on an evaluation of the different imagery and the area of the camp, We found editions that did not match with any satellite imagery and according to their source they were added by local knowledge. These editions were not changed and they were left as they were found.
-
-![Buildings and highways added by local knowledge](docs/images/update_chat/post_update_chad_camp_4.png)
-**Figure 4 - Buildings and highways added by local knowledge**
+Buildings and highways added by local knowledge
+```
 
 ## Mapping of camps without data
 
 There were camps that did not have any data or the coverage of the existing data was very low. On those camps, We added all the buildings and all types of roads visible on the satellite imagery.
 
-![Comparison of the Pre-update data VS Post-update data in Treguine Camp](docs/images/update_chat/post_update_chad_camp_5.gif)
-**Figure 5 - Comparison of the Pre-update data VS Post-update data in Treguine Camp**
+```{figure} docs/images/update_chat/post_update_chad_camp_5.gif
+:name: fig5
+
+Comparison of the Pre-update data VS Post-update data in Treguine Camp
+```
 
 ## Challenges in the mapping
 
-The main difficulty during the mapping was the low quality of the satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees which did difficult to recognize and map all the buildings.
+The main difficulty during the mapping was the low quality of the baseline satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees. 
 
-We found these cases, mostly in Maxar imagery, while in Bing imagery was easier to recognize and map the buildings, however, since Bing is older than Maxar, We mapped the features with Maxar imagery.
-
-<div style="display: inline-block">
-  <div style="float: left; width: 49%;  padding: 2px;">
-
-![Maxar imagery with trees](docs/images/update_chat/post_update_chad_camp_6.png)
-
-**Figure 6 - Maxar imagery with trees**
-
-  </div>
-  <div style=" float: right; width: 49%;  padding: 2px;">
-
-![Bing imagery](docs/images/update_chat/post_update_chad_camp_7.png)
-
-**Figure 7 - Bing imagery**
-
-  </div>
-</div>
-
-![Trees covering buildings in the area](docs/images/update_chat/post_update_chad_camp_8.png)
-
-**Figure 8 - Trees covering buildings in the area**
-
+````{tabbed} Treed
+```{figure} docs/images/update_chat/post_update_chad_camp_6.png
+Maxar imagery with trees
+```
+````
+````{tabbed} Clear
+```{figure} docs/images/update_chat/post_update_chad_camp_7.png
+Bing imagery
+```
+````
 ## Post-update stats
 
-At the end of the mapping, the Data team completed the mapping of 21 from the 22 camps.
-In the below table We can see the final stats of buildings and roads added/improved per each of the camps that were mapped by DevSeed Data Team.
+At the end of the mapping, the data team completed the mapping of 21 of 22 camps. The table contains the final stats of buildings and roads added/improved per camp.
 
 <table class="colwidths-auto table" >
   <thead>
@@ -106,13 +91,13 @@ In the below table We can see the final stats of buildings and roads added/impro
     </tr>
     <tr class="row-even">
       <th class="head">
-        <p><strong>Previous mapping</strong></p>
+        <p><strong>Baseline</strong></p>
       </th>
       <th class="head">
         <p><strong>After mapping</strong></p>
       </th>
       <th class="head">
-        <p><strong>Previous mapping</strong></p>
+        <p><strong>Baseline</strong></p>
       </th>
       <th class="head">
         <p><strong>After mapping</strong></p>

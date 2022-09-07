@@ -15,9 +15,9 @@ We looked more closely at the geospatial data items in HDX as identified by thei
 -	Food prices, food security indicators, flood hazard data, land degradation, and a variety of further layers are provided by WFP; these data make up 5% of the geospatial items in HDX. 
 -	The remaining geospatial data coming from 57 other organizations make up only ~10% of all geospatial data items in HDX. 
 
-![HDX data breakdown](docs/images/D_1a_Fig3.png) 
-
-**Figure 3: Relative share of geospatial data items in HDX by provider**
+```{figure} docs/images/D_1a_Fig3.png
+Relative share of geospatial data items in HDX by provider
+```
 
 To assess the completeness of the data available on HDX we assigned each dataset to a thematic cluster according to the UN cluster system. We further classified the data into three scales:
 -	local data - describing the infrastructure of a refugee site
@@ -32,14 +32,13 @@ HDX actively curates a subset of their data, which they consider essential. This
 
 For example, crowd-sourced data like OSM is marked as "incomplete" as the geographic coverage lacks truth to compare. A similar, but slightly more complex measure for data completeness to the one employed by HDX is proposed by [van den Homberg et al. (2018)](https://www.sciencedirect.com/science/article/pii/S009830041730571X?via%3Dihub). 
 Overall, 51% of the HDX data grids are complete, 24% are incomplete, 25% are missing (Figure 4). 
-  
-![HDX completeness](docs/images/D_1a_Fig4.png) 
 
-**Figure 4: [Overall completeness of Data Grids in HDX](https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b). From State of Open Humanitarian Data 2021 (humdata.org)**
- 
-![HDX completeness](docs/images/D_1a_Fig5.png) 
-
-**Figure 5: Completeness of HDX Data Grids by category and country**
+```{figure} docs/images/D_1a_Fig4.png
+[Overall completeness of Data Grids in HDX](https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b). From State of Open Humanitarian Data 2021 (humdata.org)
+```
+```{figure} docs/images/D_1a_Fig5.png
+Completeness of HDX Data Grids by category and country
+```
 
 ### OpenStreetMap
 The large number of uploads of OpenStreetMap data into HDX shows the importance of OSM for the humanitarian community. The data in OSM might not always be complete, or authoritative, but it is easily accessible and free of charge; making it the first choice for many information products. The consistency of OSM data and schema make it possible to develop tools and products that can be published consistently around the globe leveraging OpenStreetMap. However, the homogeneity of data quality and coverage makes assessments difficult.

@@ -4,6 +4,6 @@ In this research for the World Bank and the Joint Data Center on Forced Displace
 ## Introduction
 We propose a standardized workflow for implementing geospatial analysis in situations of forced displacement; the five-step process is detailed below in figure 1.
 
-![Data workflow](docs/images/D_1b_Fig1.png)
-
-**Figure 1 - proposed data assessment workflow**
+```{figure} docs/images/D_1b_Fig1.png
+Figure 1 - proposed data assessment workflow
+```

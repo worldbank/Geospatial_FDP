@@ -6,5 +6,5 @@ The purpose of this activity is to understand what geospatial data are needed by
 
 We analyzed reports, documents and research papers, investigated more than 7802 geospatial data items available on the humanitarian data exchange platform, and conducted 14 interviews with geospatial practitioners from the World Bank, ICRC, IOM, UNHCR, a former REACH employee, UNFPA, Red Cross NL 510, UNDP, and the HDX team. The interviews took place in September and October 2021. The following report contains three sections:
 -	In the first section we look at the information needs we learned from the desk research and the interviews. 
--	In the second section, we look at how geospatial data is currently being managed in the interviewee’s respective organizations.
+-	In the second section, we look at how geospatial data is currently being managed in the interviewee's respective organizations.
 -	in the third section we identify specific obstacles to a more interoperable use of geospatial data across the sector.

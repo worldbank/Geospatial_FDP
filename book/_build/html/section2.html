@@ -174,19 +174,36 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="Assessment_context.html">
+   Data Assessment and Improvement
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="BDA_chad_camp.html">
-   Baseline data assessment and report for Chad camps
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="BDA_chad_camp.html">
+     Baseline data assessment and report for Chad camps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update_chad_camp.html">
+     Post-update OSM data report
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -379,8 +396,10 @@ We looked more closely at the geospatial data items in HDX as identified by thei
 <li><p>Food prices, food security indicators, flood hazard data, land degradation, and a variety of further layers are provided by WFP; these data make up 5% of the geospatial items in HDX.</p></li>
 <li><p>The remaining geospatial data coming from 57 other organizations make up only ~10% of all geospatial data items in HDX.</p></li>
 </ul>
-<p><img alt="HDX data breakdown" src="_images/D_1a_Fig3.png" /></p>
-<p><strong>Figure 3: Relative share of geospatial data items in HDX by provider</strong></p>
+<div class="figure align-default" id="id1">
+<img alt="_images/D_1a_Fig3.png" src="_images/D_1a_Fig3.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Relative share of geospatial data items in HDX by provider</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
 <p>To assess the completeness of the data available on HDX we assigned each dataset to a thematic cluster according to the UN cluster system. We further classified the data into three scales:</p>
 <ul class="simple">
 <li><p>local data - describing the infrastructure of a refugee site</p></li>
@@ -396,10 +415,14 @@ Incomplete | at least one dataset on HDX partly fulfills partly these criteria |
 No Data | no datasets available | no datasets available</p>
 <p>For example, crowd-sourced data like OSM is marked as “incomplete” as the geographic coverage lacks truth to compare. A similar, but slightly more complex measure for data completeness to the one employed by HDX is proposed by <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S009830041730571X?via%3Dihub">van den Homberg et al. (2018)</a>.
 Overall, 51% of the HDX data grids are complete, 24% are incomplete, 25% are missing (Figure 4).</p>
-<p><img alt="HDX completeness" src="_images/D_1a_Fig4.png" /></p>
-<p><strong>Figure 4: <a class="reference external" href="https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b">Overall completeness of Data Grids in HDX</a>. From State of Open Humanitarian Data 2021 (<a class="reference external" href="http://humdata.org">humdata.org</a>)</strong></p>
-<p><img alt="HDX completeness" src="_images/D_1a_Fig5.png" /></p>
-<p><strong>Figure 5: Completeness of HDX Data Grids by category and country</strong></p>
+<div class="figure align-default" id="id2">
+<img alt="_images/D_1a_Fig4.png" src="_images/D_1a_Fig4.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text"><a class="reference external" href="https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b">Overall completeness of Data Grids in HDX</a>. From State of Open Humanitarian Data 2021 (<a class="reference external" href="http://humdata.org">humdata.org</a>)</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id3">
+<img alt="_images/D_1a_Fig5.png" src="_images/D_1a_Fig5.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Completeness of HDX Data Grids by category and country</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="openstreetmap">
 <h3>OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permalink to this headline">¶</a></h3>
