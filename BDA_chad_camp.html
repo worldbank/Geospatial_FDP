@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Baseline data assessment and report for Chad camps &#8212; Geography in FDP</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -62,7 +61,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -71,9 +84,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -91,14 +105,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Geospatial Practices and Obstacles in Humanitarian and Development Projects
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Geospatial Practices and Obstacles in Humanitarian and Development Projects
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Geography in FDP context
  </span>
@@ -217,90 +232,156 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CAR_report.html">
+   Central African Republic
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/BDA_chad_camp.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/worldbank/Geospatial_FDP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/worldbank/Geospatial_FDP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/BDA_chad_camp.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#quantitative-assessment-of-openstreetmap-osm-completeness">
    Quantitative assessment of OpenStreetMap (OSM) completeness
@@ -318,12 +399,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Baseline data assessment and report for Chad camps</h1>
@@ -357,13 +437,14 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="baseline-data-assessment-and-report-for-chad-camps">
-<h1>Baseline data assessment and report for Chad camps<a class="headerlink" href="#baseline-data-assessment-and-report-for-chad-camps" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="quantitative-assessment-of-openstreetmap-osm-completeness">
-<h2>Quantitative assessment of OpenStreetMap (OSM) completeness<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="baseline-data-assessment-and-report-for-chad-camps">
+<h1>Baseline data assessment and report for Chad camps<a class="headerlink" href="#baseline-data-assessment-and-report-for-chad-camps" title="Permalink to this headline">#</a></h1>
+<section id="quantitative-assessment-of-openstreetmap-osm-completeness">
+<h2>Quantitative assessment of OpenStreetMap (OSM) completeness<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness" title="Permalink to this headline">#</a></h2>
 <p>The OSM completeness of buildings and highways data is different in each of the refugee camps:</p>
 <ul class="simple">
 <li><p>3 camps had high coverage of buildings and highways</p></li>
@@ -371,27 +452,33 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>4 camps did not have data of buildings and highways.</p></li>
 </ul>
 <p>Although 3 camps had high data coverage, the baseline data assessment showed us that approximately 70% of the data has low quality, due to a) mismatch between the data and the baseline satellite imagery or b) the buildings were mapped with old imagery and need to be re-aligned.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="_images/chad_camp_img1.png" src="_images/chad_camp_img1.png" />
-<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Buildings and highways that need to be aligned to the Maxar Premiun imagery (most current imagery in this location)</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="d155a81a-8aa0-4e60-a011-16a278fe9b53" name="20a63654-4d48-44b2-b60b-eaabf1a7b974" type="radio">
-</input><label class="tabbed-label" for="d155a81a-8aa0-4e60-a011-16a278fe9b53">
-Misaligned highways</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id2">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="ec234109-8c1d-4a1d-8fab-c45a185245df" name="4ff4ff27-8dc6-43ca-93bd-46731656fe12" type="radio">
+</input><label class="sd-tab-label" for="ec234109-8c1d-4a1d-8fab-c45a185245df">
+Misaligned highways</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id2">
 <img alt="_images/chad_camp_img2.png" src="_images/chad_camp_img2.png" />
-<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">Misaligned highways</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">Misaligned highways</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="4d2d7933-8129-4205-bc88-7910c9ece0e7" name="20a63654-4d48-44b2-b60b-eaabf1a7b974" type="radio">
-</input><label class="tabbed-label" for="4d2d7933-8129-4205-bc88-7910c9ece0e7">
-Misaligned and inaccurate buildings</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id3">
+<input id="619aba8b-0314-4e91-8e65-b7e3b51ae736" name="4ff4ff27-8dc6-43ca-93bd-46731656fe12" type="radio">
+</input><label class="sd-tab-label" for="619aba8b-0314-4e91-8e65-b7e3b51ae736">
+Misaligned and inaccurate buildings</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id3">
 <img alt="_images/chad_camp_img3.png" src="_images/chad_camp_img3.png" />
-<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">Misaligned and inaccurate buildings</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Misaligned and inaccurate buildings</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>The tables below (table 1 and table 2) summarize the method for our assessment of data quality and coverage</p>
@@ -605,27 +692,31 @@ Misaligned and inaccurate buildings</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 <p><strong>Table 3: Summary per refuge of the OSM data completeness</strong></p>
-</div>
-<div class="section" id="quality-and-currency-of-available-imagery-in-base-maps">
-<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="quality-and-currency-of-available-imagery-in-base-maps">
+<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">#</a></h2>
 <p>There are different satellite imagery basemaps available in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite. From the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.</p>
 <p>The dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="2d149c34-d994-4afc-9c52-d6a1f8119dc0" name="0382089b-386d-47cf-80ad-2451e2f7ba98" type="radio">
-</input><label class="tabbed-label" for="2d149c34-d994-4afc-9c52-d6a1f8119dc0">
-Old imagery</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id4">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="ce360cc8-2ec1-40b1-abf9-0fe3e1122820" name="e8e9c503-fcce-4515-90c6-a8cde2236bb2" type="radio">
+</input><label class="sd-tab-label" for="ce360cc8-2ec1-40b1-abf9-0fe3e1122820">
+Old imagery</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id4">
 <img alt="_images/chad_camp_img4.png" src="_images/chad_camp_img4.png" />
-<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">Bing aerial imagery (old imagery)</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Bing aerial imagery (old imagery)</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="0dce2955-b806-40d2-a44d-ad8b3eb50b8d" name="0382089b-386d-47cf-80ad-2451e2f7ba98" type="radio">
-</input><label class="tabbed-label" for="0dce2955-b806-40d2-a44d-ad8b3eb50b8d">
-New imagery</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id5">
+<input id="5f327ad0-6980-41ed-ad03-1c5ef54009c2" name="e8e9c503-fcce-4515-90c6-a8cde2236bb2" type="radio">
+</input><label class="sd-tab-label" for="5f327ad0-6980-41ed-ad03-1c5ef54009c2">
+New imagery</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id5">
 <img alt="_images/chad_camp_img5.png" src="_images/chad_camp_img5.png" />
-<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Maxar premium (current imagery)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Maxar premium (current imagery)</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>In most cases the baseline OSM data aligned with Bing imagery, but since the most current imagery in almost all camps is Maxar, we are going to align the existing data to Maxar.</p>
@@ -794,133 +885,133 @@ New imagery</label><div class="tabbed-content docutils">
 </table>
 <p><strong>Table 5: Summary per refuge of the most current imagery and its quality</strong></p>
 <p>According to table 5, most camps have poor quality imagery, so in total there are 17 camps with poor quality imagery and 5 camps with medium quality imagery. And the most current imagery is Maxar Premium.</p>
-</div>
-<div class="section" id="pre-improvement-maps">
-<h2>Pre-improvement Maps<a class="headerlink" href="#pre-improvement-maps" title="Permalink to this headline">¶</a></h2>
-<div class="tabbed-set docutils">
-<input checked="checked" id="d9e26dcf-1047-4a96-89bc-04e8044f6d8c" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="d9e26dcf-1047-4a96-89bc-04e8044f6d8c">
-Selected AOIs</label><div class="tabbed-content docutils">
+</section>
+<section id="pre-improvement-maps">
+<h2>Pre-improvement Maps<a class="headerlink" href="#pre-improvement-maps" title="Permalink to this headline">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="528e2a6c-f677-4eaa-8c01-d0c593ae27ea" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="528e2a6c-f677-4eaa-8c01-d0c593ae27ea">
+Selected AOIs</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/TCD_Camps_Overview.png" /></p>
 </div>
-<input id="f8406b17-6106-4a10-b544-c6d8b2d53a4e" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="f8406b17-6106-4a10-b544-c6d8b2d53a4e">
-Amboko</label><div class="tabbed-content docutils">
+<input id="5ad0f452-6467-42c5-95c2-9fddef1cde93" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="5ad0f452-6467-42c5-95c2-9fddef1cde93">
+Amboko</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_13.png" /></p>
 </div>
-<input id="6d9afdb0-e762-4dd0-8f13-7bb4a9e044da" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="6d9afdb0-e762-4dd0-8f13-7bb4a9e044da">
-Amnabak</label><div class="tabbed-content docutils">
+<input id="e50a5821-ef9f-4fb5-8baa-c48a1debb418" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="e50a5821-ef9f-4fb5-8baa-c48a1debb418">
+Amnabak</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_1.png" /></p>
 </div>
-<input id="9c03a69d-9a67-45b6-86ad-0a1301159d49" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="9c03a69d-9a67-45b6-86ad-0a1301159d49">
-Bekourou</label><div class="tabbed-content docutils">
+<input id="e7c74372-1d7e-40cf-935b-f0e631cd2a09" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="e7c74372-1d7e-40cf-935b-f0e631cd2a09">
+Bekourou</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_14.png" /></p>
 </div>
-<input id="13f06819-67bb-4d16-8833-9483b56aea46" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="13f06819-67bb-4d16-8833-9483b56aea46">
-Belom</label><div class="tabbed-content docutils">
+<input id="87727226-bbb0-4afa-9f97-19869ac00781" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="87727226-bbb0-4afa-9f97-19869ac00781">
+Belom</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_15.png" /></p>
 </div>
-<input id="9b18456c-2916-4f85-ae67-cc6fada26f61" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="9b18456c-2916-4f85-ae67-cc6fada26f61">
-Bredjing</label><div class="tabbed-content docutils">
+<input id="5e3104bc-b116-4d52-93de-60a747476a11" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="5e3104bc-b116-4d52-93de-60a747476a11">
+Bredjing</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_7.png" /></p>
 </div>
-<input id="8c227700-8a58-4b98-b8fe-64a067df51bc" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="8c227700-8a58-4b98-b8fe-64a067df51bc">
-Daha 1</label><div class="tabbed-content docutils">
+<input id="0ec4fbad-807f-4269-94d8-64e4f66dcb1e" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="0ec4fbad-807f-4269-94d8-64e4f66dcb1e">
+Daha 1</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_16.png" /></p>
 </div>
-<input id="eeb4243f-93a1-40cb-8763-1d2529577afa" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="eeb4243f-93a1-40cb-8763-1d2529577afa">
-Dembo</label><div class="tabbed-content docutils">
+<input id="a3685f41-3019-4c22-bd22-969d5b984fc5" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="a3685f41-3019-4c22-bd22-969d5b984fc5">
+Dembo</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_17.png" /></p>
 </div>
-<input id="004e1264-e7fc-4025-89b7-9e3578d35799" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="004e1264-e7fc-4025-89b7-9e3578d35799">
-Diba (Vom)</label><div class="tabbed-content docutils">
+<input id="8eb3b935-f84d-4f0c-8b0c-21b01cff47dd" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="8eb3b935-f84d-4f0c-8b0c-21b01cff47dd">
+Diba (Vom)</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_18.png" /></p>
 </div>
-<input id="c4a1e2a5-10e0-4081-bf91-bbc92ababbfa" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="c4a1e2a5-10e0-4081-bf91-bbc92ababbfa">
-Djabal</label><div class="tabbed-content docutils">
+<input id="fc08c372-ff28-4023-a76a-f0e50a908a21" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="fc08c372-ff28-4023-a76a-f0e50a908a21">
+Djabal</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_8.png" /></p>
 </div>
-<input id="6653d3ae-79d0-4816-8e41-41ce0c903071" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="6653d3ae-79d0-4816-8e41-41ce0c903071">
-Doholo</label><div class="tabbed-content docutils">
+<input id="1ee5af4b-c6ef-466d-bc25-54a93e701dc9" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="1ee5af4b-c6ef-466d-bc25-54a93e701dc9">
+Doholo</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_19.png" /></p>
 </div>
-<input id="c08ffd9c-8f2f-4436-b716-8d99e6fc6e14" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="c08ffd9c-8f2f-4436-b716-8d99e6fc6e14">
-Dosseye</label><div class="tabbed-content docutils">
+<input id="25748eb7-04d9-4da1-b474-05a1e7122d0f" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="25748eb7-04d9-4da1-b474-05a1e7122d0f">
+Dosseye</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_20.png" /></p>
 </div>
-<input id="2ae7307c-f66f-490f-a79b-c0f3c2b1310a" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="2ae7307c-f66f-490f-a79b-c0f3c2b1310a">
-Farchana</label><div class="tabbed-content docutils">
+<input id="edb423fd-cecd-4bcb-a980-367b153310f1" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="edb423fd-cecd-4bcb-a980-367b153310f1">
+Farchana</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_2.png" /></p>
 </div>
-<input id="f7cb63da-911f-46b0-ab03-94d966da3b09" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="f7cb63da-911f-46b0-ab03-94d966da3b09">
-Gaga</label><div class="tabbed-content docutils">
+<input id="81a8eb33-c63e-4d93-96f2-775e9fbd0296" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="81a8eb33-c63e-4d93-96f2-775e9fbd0296">
+Gaga</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_9.png" /></p>
 </div>
-<input id="b4c9d871-8762-43a0-9a58-61df42c67417" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="b4c9d871-8762-43a0-9a58-61df42c67417">
-Gondje</label><div class="tabbed-content docutils">
+<input id="7034016e-1b76-419c-b289-444308cbf284" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="7034016e-1b76-419c-b289-444308cbf284">
+Gondje</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_21.png" /></p>
 </div>
-<input id="0d73cf5b-6f75-4042-8f51-4f8ba7887d9b" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="0d73cf5b-6f75-4042-8f51-4f8ba7887d9b">
-Goz Amir</label><div class="tabbed-content docutils">
+<input id="0295f8dd-27e3-4d1e-af1f-cd362ae3f90e" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="0295f8dd-27e3-4d1e-af1f-cd362ae3f90e">
+Goz Amir</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_3.png" /></p>
 </div>
-<input id="0ffe115a-e7bb-4768-ad0d-7aa4bffb4174" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="0ffe115a-e7bb-4768-ad0d-7aa4bffb4174">
-Iridimi</label><div class="tabbed-content docutils">
+<input id="789db310-2deb-4ab8-ab88-01bdf3e510e7" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="789db310-2deb-4ab8-ab88-01bdf3e510e7">
+Iridimi</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_10.png" /></p>
 </div>
-<input id="c61b3e34-804d-4875-b57a-a2c03beb6486" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="c61b3e34-804d-4875-b57a-a2c03beb6486">
-Kounoungou</label><div class="tabbed-content docutils">
+<input id="18dae562-8b31-46e4-b258-4e11c1f7a9ce" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="18dae562-8b31-46e4-b258-4e11c1f7a9ce">
+Kounoungou</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_4.png" /></p>
 </div>
-<input id="b530722b-49bb-4017-86f4-fbe126252fcc" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="b530722b-49bb-4017-86f4-fbe126252fcc">
-Mile</label><div class="tabbed-content docutils">
+<input id="7e6eadcf-4aa6-4bf7-972f-620978408991" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="7e6eadcf-4aa6-4bf7-972f-620978408991">
+Mile</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_11.png" /></p>
 </div>
-<input id="0f30218f-3ea5-48ba-8ca5-dde0c22c5988" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="0f30218f-3ea5-48ba-8ca5-dde0c22c5988">
-Moyo</label><div class="tabbed-content docutils">
+<input id="b9be7815-da7b-489e-9260-1f6ce5c6213a" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="b9be7815-da7b-489e-9260-1f6ce5c6213a">
+Moyo</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_22.png" /></p>
 </div>
-<input id="7e9ac12a-fa57-4525-bab1-e0db046031ee" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="7e9ac12a-fa57-4525-bab1-e0db046031ee">
-N’Djamena</label><div class="tabbed-content docutils">
+<input id="79e94b0d-ab86-491f-8120-8a9e0cf77d3b" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="79e94b0d-ab86-491f-8120-8a9e0cf77d3b">
+N’Djamena</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_23.png" /></p>
 </div>
-<input id="b628a527-7616-45f3-a01c-ed3267c1807c" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="b628a527-7616-45f3-a01c-ed3267c1807c">
-Oure Cassoni</label><div class="tabbed-content docutils">
+<input id="708c901f-692d-446c-8bf9-c23c5d0628f7" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="708c901f-692d-446c-8bf9-c23c5d0628f7">
+Oure Cassoni</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_5.png" /></p>
 </div>
-<input id="bebec0fa-2ea6-4f4c-a61c-07e7cb888bc1" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="bebec0fa-2ea6-4f4c-a61c-07e7cb888bc1">
-Treguine</label><div class="tabbed-content docutils">
+<input id="b1c3e6b5-49a8-448d-9d9e-c216cdbbbbe0" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="b1c3e6b5-49a8-448d-9d9e-c216cdbbbbe0">
+Treguine</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_6.png" /></p>
 </div>
-<input id="187385a7-b035-4f57-bf02-2cc2358eda0b" name="b013860a-13e6-4055-9f29-4825af65a1d2" type="radio">
-</input><label class="tabbed-label" for="187385a7-b035-4f57-bf02-2cc2358eda0b">
-Touloum</label><div class="tabbed-content docutils">
+<input id="70105ada-5cf5-406f-911e-0edf8c86cee3" name="ff24fc71-b17c-433f-af52-46efa1654839" type="radio">
+</input><label class="sd-tab-label" for="70105ada-5cf5-406f-911e-0edf8c86cee3">
+Touloum</label><div class="sd-tab-content docutils">
 <p><img alt="Overview" src="_images/output_12.png" /></p>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -944,9 +1035,11 @@ Touloum</label><div class="tabbed-content docutils">
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="TCD_refugees.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -962,24 +1055,28 @@ Touloum</label><div class="tabbed-content docutils">
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Benjamin P. Stewart<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Benjamin P. Stewart<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

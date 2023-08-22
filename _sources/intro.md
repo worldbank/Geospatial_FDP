@@ -1,9 +1,5 @@
 # Geospatial Practices and Obstacles in Humanitarian and Development Projects 
 
-## Announcement
-__This is a draft report, and is pending edits and internal approval. However, the core message is sound, and we will be focusing on communications and dissemination events in September and October 2022.__
-
-
 ## Summary
 In this research for the World Bank and the Joint Data Center on Forced Displacement, we investigated how geospatial data are currently produced, handled, used, and shared by and among humanitarian and development actors, and the obstacles they encounter. We conducted 14 interviews with geospatial experts and performed a literature/web study. Geospatial data are being used extensively by many actors, each with a different focus. Although quality geospatial data are not always available, the bottleneck in creating or collecting such data is rarely the availability of satellite images, nor the lack of funding. Rather, local collection of points of interest and their attributes poses the largest problem, alongside inconsistent data collection and sharing strategies.
 

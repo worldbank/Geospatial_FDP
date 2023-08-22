@@ -15,16 +15,19 @@ Buildings and highways that need to be aligned to the Maxar Premiun imagery (mos
 
 Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.
 
-```` {tabbed} Misaligned highways
+`````{tab-set}
+````{tab-item} Misaligned highways
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img2.png
 Misaligned highways
 ```
 ````
-```` {tabbed} Misaligned and inaccurate buildings
+
+````{tab-item} Misaligned and inaccurate buildings
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img3.png
 Misaligned and inaccurate buildings
 ```
 ````
+`````
 
 The tables below (table 1 and table 2) summarize the method for our assessment of data quality and coverage
 | **Levels**  | **Description**                                                   |
@@ -81,17 +84,19 @@ There are different satellite imagery basemaps available in the JOSM editor for 
 
 The dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.
 
-````{tabbed} Old imagery
+`````{tab-set}
+````{tab-item} Old imagery
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img4.png
 Bing aerial imagery (old imagery)
 ```
 ````
-````{tabbed} New imagery
-```{figure} docs/images/BDA_chad_camp/chad_camp_img5.png
 
+````{tab-item} New imagery
+```{figure} docs/images/BDA_chad_camp/chad_camp_img5.png
 Maxar premium (current imagery)
 ```
 ````
+`````
 
 In most cases the baseline OSM data aligned with Bing imagery, but since the most current imagery in almost all camps is Maxar, we are going to align the existing data to Maxar.
 
@@ -133,75 +138,77 @@ In most cases the baseline OSM data aligned with Bing imagery, but since the mos
 According to table 5, most camps have poor quality imagery, so in total there are 17 camps with poor quality imagery and 5 camps with medium quality imagery. And the most current imagery is Maxar Premium.
 
 ## Pre-improvement Maps
-``` {tabbed} Selected AOIs
+```` {tab-set}
+``` {tab-item} Selected AOIs
 ![Overview](docs/images/TCD_Camps_Overview.png)
 ```
-``` {tabbed} Amboko
+``` {tab-item} Amboko
 ![Overview](docs/images/TCD_Camps/output_13.png)
 ```
-``` {tabbed} Amnabak
+``` {tab-item} Amnabak
 ![Overview](docs/images/TCD_Camps/output_1.png)
 ```
-``` {tabbed} Bekourou
+``` {tab-item} Bekourou
 ![Overview](docs/images/TCD_Camps/output_14.png)
 ```
-``` {tabbed} Belom
+``` {tab-item} Belom
 ![Overview](docs/images/TCD_Camps/output_15.png)
 ```
-``` {tabbed} Bredjing
+``` {tab-item} Bredjing
 ![Overview](docs/images/TCD_Camps/output_7.png)
 ```
-``` {tabbed} Daha 1
+``` {tab-item} Daha 1
 ![Overview](docs/images/TCD_Camps/output_16.png)
 ```
-``` {tabbed} Dembo
+``` {tab-item} Dembo
 ![Overview](docs/images/TCD_Camps/output_17.png)
 ```
-``` {tabbed} Diba (Vom)
+``` {tab-item} Diba (Vom)
 ![Overview](docs/images/TCD_Camps/output_18.png)
 ```
-``` {tabbed} Djabal
+``` {tab-item} Djabal
 ![Overview](docs/images/TCD_Camps/output_8.png)
 ```
-``` {tabbed} Doholo
+``` {tab-item} Doholo
 ![Overview](docs/images/TCD_Camps/output_19.png)
 ```
-``` {tabbed} Dosseye
+``` {tab-item} Dosseye
 ![Overview](docs/images/TCD_Camps/output_20.png)
 ```
-``` {tabbed} Farchana
+``` {tab-item} Farchana
 ![Overview](docs/images/TCD_Camps/output_2.png)
 ```
-``` {tabbed} Gaga
+``` {tab-item} Gaga
 ![Overview](docs/images/TCD_Camps/output_9.png)
 ```
-``` {tabbed} Gondje
+``` {tab-item} Gondje
 ![Overview](docs/images/TCD_Camps/output_21.png)
 ```
-``` {tabbed} Goz Amir
+``` {tab-item} Goz Amir
 ![Overview](docs/images/TCD_Camps/output_3.png)
 ```
-``` {tabbed} Iridimi
+``` {tab-item} Iridimi
 ![Overview](docs/images/TCD_Camps/output_10.png)
 ```
-``` {tabbed} Kounoungou
+``` {tab-item} Kounoungou
 ![Overview](docs/images/TCD_Camps/output_4.png)
 ```
-``` {tabbed} Mile
+``` {tab-item} Mile
 ![Overview](docs/images/TCD_Camps/output_11.png)
 ```
-``` {tabbed} Moyo
+``` {tab-item} Moyo
 ![Overview](docs/images/TCD_Camps/output_22.png)
 ```
-``` {tabbed} N'Djamena
+``` {tab-item} N'Djamena
 ![Overview](docs/images/TCD_Camps/output_23.png)
 ```
-``` {tabbed} Oure Cassoni
+``` {tab-item} Oure Cassoni
 ![Overview](docs/images/TCD_Camps/output_5.png)
 ```
-``` {tabbed} Treguine
+``` {tab-item} Treguine
 ![Overview](docs/images/TCD_Camps/output_6.png)
 ```
-``` {tabbed} Touloum
+``` {tab-item} Touloum
 ![Overview](docs/images/TCD_Camps/output_12.png)
 ```
+````

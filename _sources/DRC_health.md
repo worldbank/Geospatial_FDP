@@ -12,18 +12,20 @@ Given the huge data gap and indeed the challenge to collect data in this context
 
 
 ## Sample Maps
-``` {tabbed} Selected health zones
+```` {tab-set}
+``` {tab-item} Selected health zones
 ![Overview](docs/images/DRC_Kasai_overview.png)
 ```
 
-``` {tabbed} Urbanization
+``` {tab-item} Urbanization
 ![Overview](docs/images/DRC_Kasai_GHSSMOD.png)
 ```
 
-``` {tabbed} Building density
+``` {tab-item} Building density
 ![Overview](docs/images/DRC_Kasai_building_density.png)
 ```
 
-``` {tabbed} Building density
+``` {tab-item} Building density
 ![Overview](docs/images/DRC_Kasai_missing_buildings.png)
 ```
+````

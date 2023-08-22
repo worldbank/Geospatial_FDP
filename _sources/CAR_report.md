@@ -17,16 +17,18 @@ Region without existing building footprints
 
 # Selection of IDP region to map
 Since some of the areas with IDP were already fully mapped, we had to select which regions to focus on for the mappung exercise. In order to select such regions, we mostly used visual inspection to identfy regions with unmapped buildings and roads around the IDP sites. Note that we couldnt identify the actual IDP sites because they are points rather than polygons. Next, polygons were drawn around these regionsto facilitate creation of mapping zones in OSM 
-````{tabbed} Study Area
+````` {tab-set}
+````{tab-item} Study Area
 ``` {figure} docs/images/CAR/many-regions-to-map.png
 Regions for study
 ```
 ````
-````{tabbed} Example region
+````{tab-item} Example region
 ``` {figure} docs/images/CAR/zoomed-in-target-region-to-map.png
 Regions for study
 ```
 ````
+`````
 In total, 30 small regions with varying amount of unmapped building buildings were identified. Out of the 30 zones identified above, we decided to create 3 HOT-OSM projects to enable easy identificatin of tasks by mappers as having only project would make it hard for geographically scattered zones. 
 ``` {figure} docs/images/CAR/osm-projects.png
 OSM regions

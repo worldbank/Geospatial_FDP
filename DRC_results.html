@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Baseline data assessment and report for Kasai Health Zones &#8212; Geography in FDP</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -62,7 +61,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -71,9 +84,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -91,14 +105,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Geospatial Practices and Obstacles in Humanitarian and Development Projects
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Geospatial Practices and Obstacles in Humanitarian and Development Projects
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Geography in FDP context
  </span>
@@ -217,90 +232,156 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CAR_report.html">
+   Central African Republic
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/DRC_results.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/worldbank/Geospatial_FDP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/worldbank/Geospatial_FDP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/DRC_results.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dictionary">
    Dictionary
@@ -340,12 +421,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Baseline data assessment and report for Kasai Health Zones</h1>
@@ -401,13 +481,14 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="baseline-data-assessment-and-report-for-kasai-health-zones">
-<h1>Baseline data assessment and report for Kasai Health Zones<a class="headerlink" href="#baseline-data-assessment-and-report-for-kasai-health-zones" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="dictionary">
-<h2>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="baseline-data-assessment-and-report-for-kasai-health-zones">
+<h1>Baseline data assessment and report for Kasai Health Zones<a class="headerlink" href="#baseline-data-assessment-and-report-for-kasai-health-zones" title="Permalink to this headline">#</a></h1>
+<section id="dictionary">
+<h2>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><strong>JOSM</strong>: JOSM is an extensible editor for ?OpenStreetMap (OSM) for ?Java 8+. It supports loading GPX tracks, background imagery, and OSM data from local sources as well as from online sources and allows to edit the OSM data (nodes, ways, and relations) and their metadata tags. JOSM is open source and licensed under GPL?.)</p></li>
 <li><p><strong>HOT</strong>: Humanitarian OpenStreetmap Team is an international team dedicated to humanitarian action and community development through open mapping.</p></li>
@@ -415,55 +496,67 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><strong>HOT Tasking Manager Project</strong>: An area smaller than 5000 sq kilometers that is broken down into smaller grids called tasks, so it can be mapped in parallel by multiple persons.</p></li>
 <li><p><strong>HOT Tasking Manager Task</strong>: A square grid inside a OSM Tasking Manager Project that can be locked for a period of time by a person so that other people mapping know somebody is working on improving that area, so that they do not start work on the same area of land.</p></li>
 </ul>
-</div>
-<div class="section" id="quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">
-<h2>Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">
+<h2>Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones" title="Permalink to this headline">#</a></h2>
 <p>At the start of the project, there were 8533 buildings added inside the Kasai Health Zones. We decided that we would give the mapping team only the task of adding the buildings, without adding roads. After they add the buildings we will come and add the missing roads after they finish mapping the buildings. This simplified the process of getting a better estimation of the speed of edits of the buildings.
 The mapping team added 200k buildings. The map below shows just the count for the buildings that were added by the team.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="26573aa8-6d6a-4b09-87bc-3a2eebbfa6c2" name="208358e6-8aa2-400e-ac32-7a65b7f7a9ce" type="radio">
-</input><label class="tabbed-label" for="26573aa8-6d6a-4b09-87bc-3a2eebbfa6c2">
-Baseline data</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id1">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="3fe8ab8c-6458-4dd8-bd3a-4fcbf6e53e6d" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
+</input><label class="sd-tab-label" for="3fe8ab8c-6458-4dd8-bd3a-4fcbf6e53e6d">
+Baseline data</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id1">
 <img alt="_images/image9.png" src="_images/image9.png" />
-<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Baseline buildings in Kasai health zones prior to update</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Baseline buildings in Kasai health zones prior to update</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="5d4bd3c8-0e5c-4c16-bfcf-67124ecf8706" name="208358e6-8aa2-400e-ac32-7a65b7f7a9ce" type="radio">
-</input><label class="tabbed-label" for="5d4bd3c8-0e5c-4c16-bfcf-67124ecf8706">
-Buildings added</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id2">
+<input id="a3029c29-d577-4e82-912d-387210c645c2" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
+</input><label class="sd-tab-label" for="a3029c29-d577-4e82-912d-387210c645c2">
+Buildings added</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id2">
 <img alt="_images/image16.png" src="_images/image16.png" />
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Buildings added in Kasai health zones</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Buildings added in Kasai health zones</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="a1893bdd-4abb-4380-9af6-762924fb7748" name="208358e6-8aa2-400e-ac32-7a65b7f7a9ce" type="radio">
-</input><label class="tabbed-label" for="a1893bdd-4abb-4380-9af6-762924fb7748">
-Added buildings overview</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id3">
+<input id="a63511e5-4141-4d31-b5bf-b33a7195351f" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
+</input><label class="sd-tab-label" for="a63511e5-4141-4d31-b5bf-b33a7195351f">
+Added buildings overview</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id3">
 <img alt="_images/image6.png" src="_images/image6.png" />
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Buildings added in Kasai health zones</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Buildings added in Kasai health zones</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>Below we can see a zoom-in image of Tshikapa (the square image from the above image).
 The different colors represent different people from the map team that mapped different parts of the city.</p>
-<div class="figure align-default" id="id4">
+<figure class="align-default" id="id4">
 <img alt="_images/image7.png" src="_images/image7.png" />
-<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Map of added buildings in Tshikapa</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id5">
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Map of added buildings in Tshikapa</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
 <img alt="_images/image3.png" src="_images/image3.png" />
-<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Map of added buildings in Tshikapa zoom</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Map of added buildings in Tshikapa zoom</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Each person from the map team added their grids and at the end, there was a mapper with a background in architecture that has given the task to do a final pass of the city and add some of the buildings that were missed by the other colleagues in the team (the green colored buildings)</p>
-<div class="figure align-default" id="id6">
+<figure class="align-default" id="id6">
 <img alt="_images/image2.png" src="_images/image2.png" />
-<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">Example of the map from JOSM with the Maxar Premium imagery of Tshikapa after the map team has added buildings</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="quality-and-currency-of-available-imagery-in-base-maps">
-<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Example of the map from JOSM with the Maxar Premium imagery of Tshikapa after the map team has added buildings</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="quality-and-currency-of-available-imagery-in-base-maps">
+<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Levels</strong></p></th>
@@ -482,102 +575,120 @@ The different colors represent different people from the map team that mapped di
 </tr>
 </tbody>
 </table>
-<div class="section" id="low-to-medium">
-<h3>Low to medium<a class="headerlink" href="#low-to-medium" title="Permalink to this headline">¶</a></h3>
+<section id="low-to-medium">
+<h3>Low to medium<a class="headerlink" href="#low-to-medium" title="Permalink to this headline">#</a></h3>
 <p>Prevalent across the health zones; if you circle between Mapbox and Maxar you usually can find a data source that is acceptable for adding buildings. These data make it harder to identify smaller roads.</p>
-<div class="figure align-default" id="id7">
+<figure class="align-default" id="id7">
 <img alt="_images/image26.png" src="_images/image26.png" />
-<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Comparison of satellite imagery between Maxar, Mapbox, and Bing</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Comparison of satellite imagery between Maxar, Mapbox, and Bing</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p>Bing is the most outdated image source in almost all Health Zones.</p></li>
 <li><p>Lack of seeing the date when the satellite image was made the imagery of Bing, Maxar, Mapbox, or ESRI leads to time wasted trying to obtain the most up-to-date imagery data based on estimates (new buildings in an image compared to another, some forest that appears intact in older images, but is cut in newer images)</p></li>
 <li><p>The most up-to-date satellite imagery available for the areas seems to be Maxar and Mapbox</p></li>
 <li><p>Some of the roads needed to be readjusted to the Maxar or Mapbox imagery, they were traced using older Bing images or other sources and did not had GPX tracks to see the real location</p></li>
 </ul>
-<div class="tabbed-set docutils">
-<input checked="checked" id="5a08a669-5b1a-4316-991a-3ab35b8ccc7e" name="38a24414-b7b2-46fc-8cf1-11f376931d97" type="radio">
-</input><label class="tabbed-label" for="5a08a669-5b1a-4316-991a-3ab35b8ccc7e">
-Mis-aligned roads</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id8">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="bd769fa7-d9d3-4c74-b7e4-aec268d0f84f" name="7be58f60-5606-432b-b2c4-520569586300" type="radio">
+</input><label class="sd-tab-label" for="bd769fa7-d9d3-4c74-b7e4-aec268d0f84f">
+Mis-aligned roads</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id8">
 <img alt="_images/image15.png" src="_images/image15.png" />
-<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Example of mis-alligned roads</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Example of mis-alligned roads</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="c810a1aa-43b3-4692-a5d7-e50a1d0045df" name="38a24414-b7b2-46fc-8cf1-11f376931d97" type="radio">
-</input><label class="tabbed-label" for="c810a1aa-43b3-4692-a5d7-e50a1d0045df">
-Mis -aligned roads #2</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id9">
+<input id="29d1c77e-998d-4d4a-adbe-779f021b4cd5" name="7be58f60-5606-432b-b2c4-520569586300" type="radio">
+</input><label class="sd-tab-label" for="29d1c77e-998d-4d4a-adbe-779f021b4cd5">
+Mis-aligned roads #2</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id9">
 <img alt="_images/image1.png" src="_images/image1.png" />
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Example of mis-alligned roads #2</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Example of mis-alligned roads #2</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>Most of the Roads in bigger cities where traced using older imagery or bing maps, I would estimate that almost 10-20% of the roads in the cities could not exists in reality, or are pedestrian only at best. Because of the bad imagery and the lack of details this cannot be inferred just by satellite imagery alone. I would recommend using on the ground volunteers on bikes or cars equipped with a GoPro or a cellphone with Mapillary to capture photos and GPS coordinates that can be then used to find out the roads that actually exists. A bonus of using this method is the fact that you can also capture amenities, house numbers if they exist in the city that can be added by OSM volunteers to the map.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="047b8289-b398-415f-8c75-879130eb787f" name="6dec43a3-e160-4cbb-8ff0-46e2af2fc191" type="radio">
-</input><label class="tabbed-label" for="047b8289-b398-415f-8c75-879130eb787f">
-Erroneous urban road</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id10">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="3b39817b-85ef-44d1-a78d-6649bb720847" name="08736c95-ba00-4760-87ae-4e85b9e90037" type="radio">
+</input><label class="sd-tab-label" for="3b39817b-85ef-44d1-a78d-6649bb720847">
+Erroneous urban road</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id10">
 <img alt="_images/image11.png" src="_images/image11.png" />
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Example of erroneous urban road</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Example of erroneous urban road</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="93c4dec3-d646-43f2-b998-682b93741174" name="6dec43a3-e160-4cbb-8ff0-46e2af2fc191" type="radio">
-</input><label class="tabbed-label" for="93c4dec3-d646-43f2-b998-682b93741174">
-Without overlay</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id11">
+<input id="263fd279-2290-43f8-9cd0-bac64e554959" name="08736c95-ba00-4760-87ae-4e85b9e90037" type="radio">
+</input><label class="sd-tab-label" for="263fd279-2290-43f8-9cd0-bac64e554959">
+Without overlay</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id11">
 <img alt="_images/image5.png" src="_images/image5.png" />
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Example of erroneous urban road without overlay</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Example of erroneous urban road without overlay</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="quality-of-map-edits">
-<h2>Quality of map edits<a class="headerlink" href="#quality-of-map-edits" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="quality-of-map-edits">
+<h2>Quality of map edits<a class="headerlink" href="#quality-of-map-edits" title="Permalink to this headline">#</a></h2>
 <p>Checked for errors using JOSM editor, and fixed 2663 Crossing building/highway warnings that appeared because of the fact that the original roads were added using bing imagery, and most of the building tracing was done using maxar. Could not identify GPS traces so that we can see what is the real road, so moved the roads to be aligned with the Maxar Imagery.</p>
-<div class="figure align-default" id="id12">
+<figure class="align-default" id="id12">
 <img alt="_images/image10.png" src="_images/image10.png" />
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Example of buildings and road crossing</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Example of buildings and road crossing</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In the checking process I have modified or created 2100 ways. Most of them involved moving the road so that the old roads traced using Bing would aling to the Maxar projection, that was the most up to date imagery in most of the mapped areas used by the test while adding buildings.</p>
 <p>The data that I got from Overpass API, a tool used to download data from OSM database, did not provided version  history for the highway ways, so I used the below function in QGIS</p>
-<div class="highlight-SQL notranslate"><div class="highlight"><pre><span></span><span class="k">CASE</span>
-<span class="k">WHEN</span> <span class="k">length</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="s1">&#39;way/&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">9</span> <span class="k">THEN</span> <span class="mi">1</span> <span class="k">ELSE</span> <span class="mi">0</span>
-<span class="k">END</span>
+<div class="highlight-SQL notranslate"><div class="highlight"><pre><span></span><span class="k">CASE</span><span class="w"></span>
+<span class="k">WHEN</span><span class="w"> </span><span class="k">length</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="s1">&#39;way/&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="k">END</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Roads added are Yellow color, while in Green color you can see modified ways that have been adjusted.
 This works by the fact that in OSM, way IDs are auto increment, so the older the ID, the further back in time it was created. The ways I have created had around this value 1088815124, and if we calculate the  length of the ID we get 10.
 The 1 billion node was created 10 months ago, so everything that is in Green is a node created earlier than 10 months ago that was modified in the quality control phase.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="8e86ae96-c52e-4813-8ddd-4511ed82b340" name="3af267f5-9cc2-4714-8ccc-65106b938431" type="radio">
-</input><label class="tabbed-label" for="8e86ae96-c52e-4813-8ddd-4511ed82b340">
-Map of road age</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id13">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="4ba892e1-6ae3-4feb-8a57-e5c7dfc8fe53" name="0b7d4e6c-e928-4de8-9428-78ffd1a66f8f" type="radio">
+</input><label class="sd-tab-label" for="4ba892e1-6ae3-4feb-8a57-e5c7dfc8fe53">
+Map of road age</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id13">
 <img alt="_images/image25.png" src="_images/image25.png" />
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Road age example</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Road age example</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="0c362f4c-e4f1-41dc-a9a9-6a5d18be9a9c" name="3af267f5-9cc2-4714-8ccc-65106b938431" type="radio">
-</input><label class="tabbed-label" for="0c362f4c-e4f1-41dc-a9a9-6a5d18be9a9c">
-Road age in Demba City</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id14">
+<input id="25d46128-bf73-43c6-96c9-e1eb664ee18f" name="0b7d4e6c-e928-4de8-9428-78ffd1a66f8f" type="radio">
+</input><label class="sd-tab-label" for="25d46128-bf73-43c6-96c9-e1eb664ee18f">
+Road age in Demba City</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id14">
 <img alt="_images/image17.png" src="_images/image17.png" />
-<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Road age example Demba city</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Road age example Demba city</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>There were some node connecting the highway and building errors that were corrected.
 This happens because of the way JOSM works, if you try to add a node closer than a certain threshold, it will snap it and unite the two nodes. In this case when one of the mapper tried to add the building node it snapped and become united with the road. To fix this you select the building and press G (Unglue Way).</p>
-<div class="figure align-default" id="id15">
+<figure class="align-default" id="id15">
 <img alt="_images/image21.png" src="_images/image21.png" />
-<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">JOSM example</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="speed-of-edits">
-<h2>Speed of edits<a class="headerlink" href="#speed-of-edits" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">JOSM example</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="speed-of-edits">
+<h2>Speed of edits<a class="headerlink" href="#speed-of-edits" title="Permalink to this headline">#</a></h2>
 <p>We will look at the first four mappers who added the most buildings to approximate how many buildings per hour they have added during the project.</p>
 <ul class="simple">
 <li><p>The first added 57k buildings in 25 days = A average of 2280 buildings per day, or 285 buildings per hour (8h/day)</p></li>
@@ -585,72 +696,88 @@ This happens because of the way JOSM works, if you try to add a node closer than
 <li><p>The third added 45k buildings in 26 days  = A average of 1730 buildings per day, or 216 buildings per hour (8h/day)</p></li>
 <li><p>The fourth added 19k buildings in 20 days, working 5 hours per day  = A average of 950 buildings per day, or 190 buildings per hour (5h/day)</p></li>
 </ul>
-<div class="figure align-default" id="id16">
+<figure class="align-default" id="id16">
 <img alt="_images/image19.png" src="_images/image19.png" />
-<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Mapping speed</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="josm-tips">
-<h2>JOSM tips<a class="headerlink" href="#josm-tips" title="Permalink to this headline">¶</a></h2>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Mapping speed</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="josm-tips">
+<h2>JOSM tips<a class="headerlink" href="#josm-tips" title="Permalink to this headline">#</a></h2>
 <p>Satellite images are sometimes made at an angle, so when drawing buildings from satellite imagery you will create a building that looks like the imagery from the satellite, but this is not an accurate representation of the ground truth.</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="af862e1c-4e7c-49fa-a91a-06b07da036e3" name="42ecffda-e16d-42d4-9a97-51c6d08973bc" type="radio">
-</input><label class="tabbed-label" for="af862e1c-4e7c-49fa-a91a-06b07da036e3">
-Example of building from angled imagery</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id17">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="427180a7-80fe-41bf-ade6-ab06712d2efa" name="5ab1a967-1986-4271-9b56-3ab23b23cab4" type="radio">
+</input><label class="sd-tab-label" for="427180a7-80fe-41bf-ade6-ab06712d2efa">
+Example of building from angled imagery</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id17">
 <img alt="_images/image13.png" src="_images/image13.png" />
-<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Angled image building</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Angled image building</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="598e05a8-7c88-4966-bb46-7964609dfa54" name="42ecffda-e16d-42d4-9a97-51c6d08973bc" type="radio">
-</input><label class="tabbed-label" for="598e05a8-7c88-4966-bb46-7964609dfa54">
-and now squared</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id18">
+<input id="81ee1840-c099-411a-a696-bb222d56e7b6" name="5ab1a967-1986-4271-9b56-3ab23b23cab4" type="radio">
+</input><label class="sd-tab-label" for="81ee1840-c099-411a-a696-bb222d56e7b6">
+and now squared</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id18">
 <img alt="_images/image28.png" src="_images/image28.png" />
-<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Straightened building</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Straightened building</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>We draw the building from the perspective that we have, but in the end the building should be drawn as it would look in the building plan. After drawing the buildings, you select it and you <a class="reference external" href="https://josm.openstreetmap.de/wiki/Help/Action/OrthogonalizeShape">press Q to Orthogonalize</a> the building.</p>
 <p>When adding buildings from multiple imagery sources, first look and try to identify what imagery source is the most up to date. In most of the western world, we would expect buildings to not disappear so fast, so we can identify newer satellite imagery based on the newer buildings, removed forest in one imagery compared to another, new roads, etc. This is harder to do in Congo in the Kasai Health Zones as building tend to dissapear or be moved much more often.</p>
 <p>Let’s take this <a class="reference external" href="https://www.openstreetmap.org/#map=19/-4.596973033288558/22.857390850682826">area as an example</a>. To zoom to a specific location in JOSM, one needs to copy the link above and paste it inside the Jump to Position dialog box</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="f2cab23c-ab74-41e4-a8dd-ffa1accc993b" name="0f6c47a3-b242-44b6-846f-d19b0157fcf7" type="radio">
-</input><label class="tabbed-label" for="f2cab23c-ab74-41e4-a8dd-ffa1accc993b">
-JOSM example</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id19">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="bbd66021-eab5-44ee-b4df-7c196fbdc157" name="cca8bc60-1681-468f-8fa6-44d70c056339" type="radio">
+</input><label class="sd-tab-label" for="bbd66021-eab5-44ee-b4df-7c196fbdc157">
+JOSM example</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id19">
 <img alt="_images/image12.png" src="_images/image12.png" />
-<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">JOSM example</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">JOSM example</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="590d0f9c-dd2c-4ed4-ad91-20318609d3a1" name="0f6c47a3-b242-44b6-846f-d19b0157fcf7" type="radio">
-</input><label class="tabbed-label" for="590d0f9c-dd2c-4ed4-ad91-20318609d3a1">
-JOSM example 2</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id20">
+<input id="ad196079-899f-4f9b-9c7a-db6320a83e29" name="cca8bc60-1681-468f-8fa6-44d70c056339" type="radio">
+</input><label class="sd-tab-label" for="ad196079-899f-4f9b-9c7a-db6320a83e29">
+JOSM example 2</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id20">
 <img alt="_images/image14.png" src="_images/image14.png" />
-<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">JOSM example 2</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">JOSM example 2</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 <p>We then need to adjust the Imagery offset so that the two different imagery sources are aligned. You do this in JOSM by going to Imagery -&gt; Imagery offset and select to adjust one of the Imagery Layer. In this case, I adjusted the Bing aerial imagery layer.</p>
-<div class="figure align-default" id="id21">
+<figure class="align-default" id="id21">
 <img alt="_images/image18.png" src="_images/image18.png" />
-<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">JOSM example 3</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id22">
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">JOSM example 3</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id22">
 <img alt="_images/image8.png" src="_images/image8.png" />
-<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Example building change</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Example building change</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In the image above, where on the left side we have old Bing Imagery, and on the right we have Maxar Imagery, almost 80% of the buildings have moved, disappeared or were combined in newer structures.</p>
 <p>It does not recommend adding mixed buildings from different imagery sets, especially using bing imagery in Africa, it seems that the image is really old and it’s possible that most of the buildings there have disappeared.</p>
 <p>When using JOSM and HOT Tasking Manager, check for building duplicates at the margins of tasks, as it is possible that both the persons from the adjacent tasks will draw the same building leading to duplicated buildings.</p>
-<div class="figure align-default" id="id23">
+<figure class="align-default" id="id23">
 <img alt="_images/image4.png" src="_images/image4.png" />
-<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Tasking manager overlap</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Tasking manager overlap</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>A good strategy recommend is to select “HOT Tasking Manager Tasks” for mapping that are at a distance of two or greater than other Tasks already reserved for editing by someone else, so you do not have common borders.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -674,9 +801,11 @@ JOSM example 2</label><div class="tabbed-content docutils">
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="DRC_health.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -692,24 +821,28 @@ JOSM example 2</label><div class="tabbed-content docutils">
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Benjamin P. Stewart<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Benjamin P. Stewart<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

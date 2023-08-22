@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Geospatial data management practices &#8212; Geography in FDP</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -62,7 +61,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -71,9 +84,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -91,14 +105,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Geospatial Practices and Obstacles in Humanitarian and Development Projects
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Geospatial Practices and Obstacles in Humanitarian and Development Projects
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Geography in FDP context
  </span>
@@ -178,17 +193,29 @@ const thebe_selector_output = ".output, .cell_output"
    Data Assessment and Improvement
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="DRC_health.html">
    Kasai Health Zones
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DRC_results.html">
+     Baseline data assessment and report for Kasai Health Zones
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="TCD_refugees.html">
    Chad refugees
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -205,90 +232,156 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CAR_report.html">
+   Central African Republic
+  </a>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/section2.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/worldbank/Geospatial_FDP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/worldbank/Geospatial_FDP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/section2.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#un-data-scramble">
    UN Data Scramble
@@ -318,12 +411,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Geospatial data management practices</h1>
@@ -369,22 +461,23 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="geospatial-data-management-practices">
-<h1>Geospatial data management practices<a class="headerlink" href="#geospatial-data-management-practices" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="geospatial-data-management-practices">
+<h1>Geospatial data management practices<a class="headerlink" href="#geospatial-data-management-practices" title="Permalink to this headline">#</a></h1>
 <p>Geospatial data needs are driven by information needs, which vary based on the situation, the agency, and the country. This translates into variation in terms of required data, accuracy, timeliness, and attribution. In addition, humanitarian actors often work in a reactive mode, therefore, the collection and harmonization of data happens just before or just after an emergency. In this section, several data management and data handling practices are investigated as implemented by different agencies. The goal is to understand how agencies manage and collect data in order to better understand the roadblocks and bottle necks in the process.</p>
-<div class="section" id="un-data-scramble">
-<h2>UN Data Scramble<a class="headerlink" href="#un-data-scramble" title="Permalink to this headline">¶</a></h2>
+<section id="un-data-scramble">
+<h2>UN Data Scramble<a class="headerlink" href="#un-data-scramble" title="Permalink to this headline">#</a></h2>
 <p>UN OCHA leads the <a class="reference external" href="https://humanitarian.atlassian.net/wiki/spaces/imtoolbox/pages/61800455/Coordinated+Data+Scramble">Coordinated Data Scramble</a> (CDS). There is no fixed set of people to be involved in this process, but OCHA recommends involving local and remote responders and to include representatives from all UN, NGO, and local authorities. During the process, the team discusses the data needs, assesses available sources, and identifies the best available data for each information need. The body where improvements of current data handling practices are discussed is the <a class="reference external" href="https://www.humanitarianresponse.info/en/topics/imwg">Global Information Management Working Group</a> IMWG, chaired by OCHA, the Data Sub-Group responsible for the improvement of the Common Operational Datasets, and the <a class="reference external" href="https://www.humanitarianresponse.info/en/topics/imwg/gis-subgroup">GIS Sub-Group</a>.</p>
-</div>
-<div class="section" id="slow-data-scramble-project-by-mapaction">
-<h2>“Slow Data Scramble” project by MapAction<a class="headerlink" href="#slow-data-scramble-project-by-mapaction" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="slow-data-scramble-project-by-mapaction">
+<h2>“Slow Data Scramble” project by MapAction<a class="headerlink" href="#slow-data-scramble-project-by-mapaction" title="Permalink to this headline">#</a></h2>
 <p>The problem with the CDS is timeliness: if data collection and harmonization starts at the onset of a crisis, map production and geospatial analysis has to leverage existing data, on short timelines. This leads to sub optimal results driven by holes in data quality and availability, many of which could be improved by working on the problem before the crisis. MapAction has proposed a solution to <a class="reference external" href="https://mapaction.org/mapactions-moonshot-origins-and-ambitions/">automate the production</a> of nine “core” map products for use in humanitarian disasters called the “<a class="reference external" href="https://mapaction.org/moonshot-part-2-the-slow-data-scramble/">slow data scramble</a>”. The ambition is to “fundamentally change the way we approach map creation in the humanitarian sector in the future”. The project identified 23 data layers needed to make these core map products, the slow scramble comprises identifying sources for each data item and developing a more thorough understanding of the holes and limitations of those data sources.</p>
-</div>
-<div class="section" id="humanitarian-data-exchange">
-<h2>Humanitarian Data Exchange<a class="headerlink" href="#humanitarian-data-exchange" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="humanitarian-data-exchange">
+<h2>Humanitarian Data Exchange<a class="headerlink" href="#humanitarian-data-exchange" title="Permalink to this headline">#</a></h2>
 <p>The Humanitarian Data Exchange platform <a class="reference external" href="https://data.humdata.org/">HDX</a> is run by UN-OCHA. It serves as a data exchange where humanitarian actors upload data that might be helpful to others. Currently, HDX contains over 18000 entries. While only 197 items are flagged as Geodata, ~8000 items appear to be geolocated, as indicated by their file format. This is indicative of the lack of quality-control and detailed metadata in HDX, which is both a drawback and a feature.
 HDX explicitly does not enforce data standards on the platform, as requirements to reformat the data prior to sharing would discourage users. Instead, HDX encourages the use of the <a class="reference external" href="https://hxlstandard.org/standard/1_0final/dictionary/">Humanitarian Exchange Language</a> HXL, a low-barrier standard, which consists of adding additional alias names from a defined namespace to each column in a table. The lack of enforced standards makes depositing data a simple process, which encourages uptake; however, the lack of quality controls makes searching, assessing and using data a difficult process.
 We looked more closely at the geospatial data items in HDX as identified by their file extension. 62 organizations have uploaded geospatial data into HDX, but the majority (90%) of data comes from only five providers:</p>
@@ -396,18 +489,20 @@ We looked more closely at the geospatial data items in HDX as identified by thei
 <li><p>Food prices, food security indicators, flood hazard data, land degradation, and a variety of further layers are provided by WFP; these data make up 5% of the geospatial items in HDX.</p></li>
 <li><p>The remaining geospatial data coming from 57 other organizations make up only ~10% of all geospatial data items in HDX.</p></li>
 </ul>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="_images/D_1a_Fig3.png" src="_images/D_1a_Fig3.png" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Relative share of geospatial data items in HDX by provider</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Relative share of geospatial data items in HDX by provider</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>To assess the completeness of the data available on HDX we assigned each dataset to a thematic cluster according to the UN cluster system. We further classified the data into three scales:</p>
 <ul class="simple">
 <li><p>local data - describing the infrastructure of a refugee site</p></li>
 <li><p>regional data - covering a sub-national scale</p></li>
 <li><p>national scale - national level coverage, such as administrative boundaries</p></li>
 </ul>
-<div class="section" id="completeness-of-hdx-data-grids">
-<h3>Completeness of HDX Data Grids<a class="headerlink" href="#completeness-of-hdx-data-grids" title="Permalink to this headline">¶</a></h3>
+<section id="completeness-of-hdx-data-grids">
+<h3>Completeness of HDX Data Grids<a class="headerlink" href="#completeness-of-hdx-data-grids" title="Permalink to this headline">#</a></h3>
 <p>HDX actively curates a subset of their data, which they consider essential. This subset, called <a class="reference external" href="https://data.humdata.org/dashboards/overview-of-data-grids">Data Grids</a>, contains 27 data layers; this list is similar, but slightly different to the list of priority data items assembled by ACAPS for the Coordinated Data Scramble. HDX continuously monitors the completeness of these items in HDX. The datasets must be at a sub-national scale (admin1 or finer), have a broad geographic coverage (be available for the entire country, where relevant), and be timely. Data in HDX are evaluated for completeness of both attributes and geographic coverage
 | | Attributes | Coverage
 Complete | at least one dataset is found that fulfills all criteria | Has comparator for assessment and matches that assessment
@@ -415,17 +510,21 @@ Incomplete | at least one dataset on HDX partly fulfills partly these criteria |
 No Data | no datasets available | no datasets available</p>
 <p>For example, crowd-sourced data like OSM is marked as “incomplete” as the geographic coverage lacks truth to compare. A similar, but slightly more complex measure for data completeness to the one employed by HDX is proposed by <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S009830041730571X?via%3Dihub">van den Homberg et al. (2018)</a>.
 Overall, 51% of the HDX data grids are complete, 24% are incomplete, 25% are missing (Figure 4).</p>
-<div class="figure align-default" id="id2">
+<figure class="align-default" id="id2">
 <img alt="_images/D_1a_Fig4.png" src="_images/D_1a_Fig4.png" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text"><a class="reference external" href="https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b">Overall completeness of Data Grids in HDX</a>. From State of Open Humanitarian Data 2021 (<a class="reference external" href="http://humdata.org">humdata.org</a>)</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id3">
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><a class="reference external" href="https://data.humdata.org/dataset/repository-for-pdf-files/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b">Overall completeness of Data Grids in HDX</a>. From State of Open Humanitarian Data 2021 (<a class="reference external" href="http://humdata.org">humdata.org</a>)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
 <img alt="_images/D_1a_Fig5.png" src="_images/D_1a_Fig5.png" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Completeness of HDX Data Grids by category and country</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="openstreetmap">
-<h3>OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Completeness of HDX Data Grids by category and country</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="openstreetmap">
+<h3>OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permalink to this headline">#</a></h3>
 <p>The large number of uploads of OpenStreetMap data into HDX shows the importance of OSM for the humanitarian community. The data in OSM might not always be complete, or authoritative, but it is easily accessible and free of charge; making it the first choice for many information products. The consistency of OSM data and schema make it possible to develop tools and products that can be published consistently around the globe leveraging OpenStreetMap. However, the homogeneity of data quality and coverage makes assessments difficult.
 Despite its limitations, the humanitarian and development community should continue to contribute to OSM whenever possible; which happens in a number of ways:</p>
 <ul class="simple">
@@ -434,9 +533,9 @@ Despite its limitations, the humanitarian and development community should conti
 <li><p><a class="reference external" href="https://opencitiesproject.org/">Open Cities Africa</a> - the aim of this project was to build up local OSM communities who then map not only building footprints, streets and water bodies, but collect all kinds of geospatial information on the ground. This includes drainage canals and various points of interest. The decision what to collect and how to structure the data (the data model) was developed by the local stakeholder in each of the 12 involved cities. According to the WB contact we interviewed about this, approximately 75% of the data to collect was the same everywhere, but local differences required the data model to adapt. In Open Cities Africa, a large part of the data model was based on the [model developed](https:\<a class="reference external" href="http://raw.githubusercontent.com">raw.githubusercontent.com</a>\hotosm\RamaniHuria\master\data model\Data Model and Tagging.pdf) by the community-based mapping project <a class="reference external" href="https://ramanihuria.org/en/about-us/">Dar Ramani Huria</a> in Dar es Salaam, Tanzania.</p></li>
 </ul>
 <p>To overcome the challenge of locally different data models in use for refugee site mapping in OSM, UNHCR tasked <a class="reference external" href="https://www.cartong.org/">CartONG</a> with analyzing the data models de facto in use, and to engage with the OSM community to develop and promote a unified data model for features relevant for UNHCR. An overview of which tags are in use either officially or de-facto is found on a dedicated wiki page of the <a class="reference external" href="https://wiki.openstreetmap.org/wiki/Refugee/Displaced_Site_Mapping">OSM documentation</a>. CartONG also works on procedures to export features from UNHCR’s internal database of refugee site infrastructure into OSM, and to combine OSM data and UNHCR data in local copy of OSM at UNHCR; both requires identifying the correspondences between OSM tags and UNHCR attributes.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -460,9 +559,11 @@ Despite its limitations, the humanitarian and development community should conti
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="section1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -478,24 +579,28 @@ Despite its limitations, the humanitarian and development community should conti
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Benjamin P. Stewart<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Benjamin P. Stewart<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
