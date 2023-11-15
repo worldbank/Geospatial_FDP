@@ -32,6 +32,7 @@ Data after updating
 ```
 ````
 `````
+
 Although the team relied on the most current imagery basemap (Maxar premium), data were found that did not match with any satellite imagery and according to the source attributes, they were added by local knowledge. These data were not changed and were left as they were found.
 
 ```{figure} docs/images/update_chat/post_update_chad_camp_4.png
@@ -53,6 +54,7 @@ Comparison of the Pre-update data VS Post-update data in Treguine Camp
 ## Challenges in the mapping
 
 The main difficulty during the mapping was the low quality of the baseline satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees. 
+
 `````{tab-set}
 ````{tab-item} Treed
 ```{figure} docs/images/update_chat/post_update_chad_camp_6.png

@@ -16,15 +16,12 @@ Given the huge data gap and indeed the challenge to collect data in this context
 ``` {tab-item} Selected health zones
 ![Overview](docs/images/DRC_Kasai_overview.png)
 ```
-
 ``` {tab-item} Urbanization
 ![Overview](docs/images/DRC_Kasai_GHSSMOD.png)
 ```
-
 ``` {tab-item} Building density
 ![Overview](docs/images/DRC_Kasai_building_density.png)
 ```
-
 ``` {tab-item} Building density
 ![Overview](docs/images/DRC_Kasai_missing_buildings.png)
 ```

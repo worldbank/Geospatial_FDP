@@ -15,14 +15,13 @@ Buildings and highways that need to be aligned to the Maxar Premiun imagery (mos
 
 Some other issues that need to be fixed are; misaligned highways, inaccurate buildings and highways, etc.
 
-`````{tab-set}
-````{tab-item} Misaligned highways
+````` {tab-set} 
+```` {tab-item} Misaligned highways
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img2.png
 Misaligned highways
 ```
 ````
-
-````{tab-item} Misaligned and inaccurate buildings
+```` {tab-item} Misaligned and inaccurate buildings
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img3.png
 Misaligned and inaccurate buildings
 ```
@@ -83,14 +82,12 @@ According to the summary table of data quality (table 3), there are 3 camps with
 There are different satellite imagery basemaps available in the JOSM editor for the mapping process; Bing aerial imagery, Esri World Imagery, ESRI Clarity, Maxar Premium, Mapbox Satellite. From the baseline data assessment, we found that the imageries most used in the previous mappings were Maxar Premium and Bing aerial imagery.
 
 The dates of the images are unknown, so to know which of them is the most current, we did a comparison between them and one of the signs that one imagery is the most recent is that it shows buildings and/or highways in areas where the other imagery only shows an empty field.
-
 `````{tab-set}
 ````{tab-item} Old imagery
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img4.png
 Bing aerial imagery (old imagery)
 ```
 ````
-
 ````{tab-item} New imagery
 ```{figure} docs/images/BDA_chad_camp/chad_camp_img5.png
 Maxar premium (current imagery)
@@ -138,7 +135,7 @@ In most cases the baseline OSM data aligned with Bing imagery, but since the mos
 According to table 5, most camps have poor quality imagery, so in total there are 17 camps with poor quality imagery and 5 camps with medium quality imagery. And the most current imagery is Maxar Premium.
 
 ## Pre-improvement Maps
-```` {tab-set}
+````{tab-set}
 ``` {tab-item} Selected AOIs
 ![Overview](docs/images/TCD_Camps_Overview.png)
 ```

@@ -1,48 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Baseline data assessment and report for Kasai Health Zones &#8212; Geography in FDP</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,61 +62,104 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'DRC_results';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Chad refugees" href="TCD_refugees.html" />
     <link rel="prev" title="Kasai Health Zones" href="DRC_health.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Nov 15, 2023"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Geography in FDP</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Geography in FDP - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Geography in FDP - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -113,382 +168,229 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Geography in FDP context
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Geography in FDP context</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="context.html">
-   Context and Statement of Problem
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="section1.html">
-   Information and data needs of humanitarian and development actors
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="section2.html">
-   Geospatial data management practices
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="section3.html">
-   Obstacles derived from interviews
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="conclusion.html">
-   Conclusion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="acknowledgement.html">
-   Acknolwedgements
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="context.html">Context and Statement of Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section1.html">Information and data needs of humanitarian and development actors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section2.html">Geospatial data management practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section3.html">Obstacles derived from interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">Acknolwedgements</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data assessment strategy
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data assessment strategy</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="data_context.html">
-   Abstract
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_section1.html">
-   Stage 1: Define Information Needs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_section2.html">
-   Stage 2 and 3: Define Data Needs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_section3.html">
-   Stage 4: Assess Fit for Purpose
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data_section4.html">
-   Stage 5: Data collection/generation
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="data_context.html">Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_section1.html">Stage 1: Define Information Needs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_section2.html">Stage 2 and 3: Define Data Needs</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="data_section3.html">Stage 4: Assess Fit for Purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_section4.html">Stage 5: Data collection/generation</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data assessments
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data assessments</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Assessment_context.html">
-   Data Assessment and Improvement
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="DRC_health.html">
-   Kasai Health Zones
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Baseline data assessment and report for Kasai Health Zones
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="TCD_refugees.html">
-   Chad refugees
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="BDA_chad_camp.html">
-     Baseline data assessment and report for Chad camps
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="update_chad_camp.html">
-     Post-update OSM data report
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="CAR_report.html">
-   Central African Republic
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data_introductions.html">Assessing and Improving Open Geospatial Data</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Assessment_context.html">Data Assessment and Improvement</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="DRC_health.html">Kasai Health Zones</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Baseline data assessment and report for Kasai Health Zones</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="TCD_refugees.html">Chad refugees</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="BDA_chad_camp.html">Baseline data assessment and report for Chad camps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update_chad_camp.html">Post-update OSM data report</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CAR_report.html">Central African Republic</a></li>
+
+
+
+
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/worldbank/Geospatial_FDP" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/worldbank/Geospatial_FDP"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
 
 </a>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/DRC_results.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/DRC_results.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="btn__text-container">.md</span>
 </a>
-
-      </li>
+</li>
+      
+      
+      
       
       <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
   </span>
 
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dictionary">
-   Dictionary
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">
-   Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quality-and-currency-of-available-imagery-in-base-maps">
-   Quality and currency of available imagery in base maps
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#low-to-medium">
-     Low to medium
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quality-of-map-edits">
-   Quality of map edits
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#speed-of-edits">
-   Speed of edits
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#josm-tips">
-   JOSM tips
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Baseline data assessment and report for Kasai Health Zones</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dictionary">
-   Dictionary
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">
-   Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quality-and-currency-of-available-imagery-in-base-maps">
-   Quality and currency of available imagery in base maps
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#low-to-medium">
-     Low to medium
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quality-of-map-edits">
-   Quality of map edits
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#speed-of-edits">
-   Speed of edits
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#josm-tips">
-   JOSM tips
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Baseline data assessment and report for Kasai Health Zones</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary">Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-and-currency-of-available-imagery-in-base-maps">Quality and currency of available imagery in base maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-to-medium">Low to medium</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-of-map-edits">Quality of map edits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speed-of-edits">Speed of edits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#josm-tips">JOSM tips</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="baseline-data-assessment-and-report-for-kasai-health-zones">
-<h1>Baseline data assessment and report for Kasai Health Zones<a class="headerlink" href="#baseline-data-assessment-and-report-for-kasai-health-zones" title="Permalink to this headline">#</a></h1>
+<h1>Baseline data assessment and report for Kasai Health Zones<a class="headerlink" href="#baseline-data-assessment-and-report-for-kasai-health-zones" title="Permalink to this heading">#</a></h1>
 <section id="dictionary">
-<h2>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">#</a></h2>
+<h2>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>JOSM</strong>: JOSM is an extensible editor for ?OpenStreetMap (OSM) for ?Java 8+. It supports loading GPX tracks, background imagery, and OSM data from local sources as well as from online sources and allows to edit the OSM data (nodes, ways, and relations) and their metadata tags. JOSM is open source and licensed under GPL?.)</p></li>
 <li><p><strong>HOT</strong>: Humanitarian OpenStreetmap Team is an international team dedicated to humanitarian action and community development through open mapping.</p></li>
@@ -498,12 +400,12 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">
-<h2>Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones" title="Permalink to this headline">#</a></h2>
+<h2>Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones<a class="headerlink" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones" title="Permalink to this heading">#</a></h2>
 <p>At the start of the project, there were 8533 buildings added inside the Kasai Health Zones. We decided that we would give the mapping team only the task of adding the buildings, without adding roads. After they add the buildings we will come and add the missing roads after they finish mapping the buildings. This simplified the process of getting a better estimation of the speed of edits of the buildings.
 The mapping team added 200k buildings. The map below shows just the count for the buildings that were added by the team.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3fe8ab8c-6458-4dd8-bd3a-4fcbf6e53e6d" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
-</input><label class="sd-tab-label" for="3fe8ab8c-6458-4dd8-bd3a-4fcbf6e53e6d">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
 Baseline data</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id1">
 <img alt="_images/image9.png" src="_images/image9.png" />
@@ -512,8 +414,8 @@ Baseline data</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="a3029c29-d577-4e82-912d-387210c645c2" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
-</input><label class="sd-tab-label" for="a3029c29-d577-4e82-912d-387210c645c2">
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
 Buildings added</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id2">
 <img alt="_images/image16.png" src="_images/image16.png" />
@@ -522,8 +424,8 @@ Buildings added</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="a63511e5-4141-4d31-b5bf-b33a7195351f" name="eb289acc-7731-4c07-9876-128bc6a710a4" type="radio">
-</input><label class="sd-tab-label" for="a63511e5-4141-4d31-b5bf-b33a7195351f">
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
 Added buildings overview</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id3">
 <img alt="_images/image6.png" src="_images/image6.png" />
@@ -556,8 +458,8 @@ The different colors represent different people from the map team that mapped di
 </figure>
 </section>
 <section id="quality-and-currency-of-available-imagery-in-base-maps">
-<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
+<h2>Quality and currency of available imagery in base maps<a class="headerlink" href="#quality-and-currency-of-available-imagery-in-base-maps" title="Permalink to this heading">#</a></h2>
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Levels</strong></p></th>
 <th class="head"><p><strong>Description</strong></p></th>
@@ -576,7 +478,7 @@ The different colors represent different people from the map team that mapped di
 </tbody>
 </table>
 <section id="low-to-medium">
-<h3>Low to medium<a class="headerlink" href="#low-to-medium" title="Permalink to this headline">#</a></h3>
+<h3>Low to medium<a class="headerlink" href="#low-to-medium" title="Permalink to this heading">#</a></h3>
 <p>Prevalent across the health zones; if you circle between Mapbox and Maxar you usually can find a data source that is acceptable for adding buildings. These data make it harder to identify smaller roads.</p>
 <figure class="align-default" id="id7">
 <img alt="_images/image26.png" src="_images/image26.png" />
@@ -591,8 +493,8 @@ The different colors represent different people from the map team that mapped di
 <li><p>Some of the roads needed to be readjusted to the Maxar or Mapbox imagery, they were traced using older Bing images or other sources and did not had GPX tracks to see the real location</p></li>
 </ul>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="bd769fa7-d9d3-4c74-b7e4-aec268d0f84f" name="7be58f60-5606-432b-b2c4-520569586300" type="radio">
-</input><label class="sd-tab-label" for="bd769fa7-d9d3-4c74-b7e4-aec268d0f84f">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
 Mis-aligned roads</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id8">
 <img alt="_images/image15.png" src="_images/image15.png" />
@@ -601,8 +503,8 @@ Mis-aligned roads</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="29d1c77e-998d-4d4a-adbe-779f021b4cd5" name="7be58f60-5606-432b-b2c4-520569586300" type="radio">
-</input><label class="sd-tab-label" for="29d1c77e-998d-4d4a-adbe-779f021b4cd5">
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
 Mis-aligned roads #2</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id9">
 <img alt="_images/image1.png" src="_images/image1.png" />
@@ -614,8 +516,8 @@ Mis-aligned roads #2</label><div class="sd-tab-content docutils">
 </div>
 <p>Most of the Roads in bigger cities where traced using older imagery or bing maps, I would estimate that almost 10-20% of the roads in the cities could not exists in reality, or are pedestrian only at best. Because of the bad imagery and the lack of details this cannot be inferred just by satellite imagery alone. I would recommend using on the ground volunteers on bikes or cars equipped with a GoPro or a cellphone with Mapillary to capture photos and GPS coordinates that can be then used to find out the roads that actually exists. A bonus of using this method is the fact that you can also capture amenities, house numbers if they exist in the city that can be added by OSM volunteers to the map.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3b39817b-85ef-44d1-a78d-6649bb720847" name="08736c95-ba00-4760-87ae-4e85b9e90037" type="radio">
-</input><label class="sd-tab-label" for="3b39817b-85ef-44d1-a78d-6649bb720847">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
 Erroneous urban road</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id10">
 <img alt="_images/image11.png" src="_images/image11.png" />
@@ -624,8 +526,8 @@ Erroneous urban road</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="263fd279-2290-43f8-9cd0-bac64e554959" name="08736c95-ba00-4760-87ae-4e85b9e90037" type="radio">
-</input><label class="sd-tab-label" for="263fd279-2290-43f8-9cd0-bac64e554959">
+<input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
 Without overlay</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id11">
 <img alt="_images/image5.png" src="_images/image5.png" />
@@ -638,7 +540,7 @@ Without overlay</label><div class="sd-tab-content docutils">
 </section>
 </section>
 <section id="quality-of-map-edits">
-<h2>Quality of map edits<a class="headerlink" href="#quality-of-map-edits" title="Permalink to this headline">#</a></h2>
+<h2>Quality of map edits<a class="headerlink" href="#quality-of-map-edits" title="Permalink to this heading">#</a></h2>
 <p>Checked for errors using JOSM editor, and fixed 2663 Crossing building/highway warnings that appeared because of the fact that the original roads were added using bing imagery, and most of the building tracing was done using maxar. Could not identify GPS traces so that we can see what is the real road, so moved the roads to be aligned with the Maxar Imagery.</p>
 <figure class="align-default" id="id12">
 <img alt="_images/image10.png" src="_images/image10.png" />
@@ -648,17 +550,17 @@ Without overlay</label><div class="sd-tab-content docutils">
 </figure>
 <p>In the checking process I have modified or created 2100 ways. Most of them involved moving the road so that the old roads traced using Bing would aling to the Maxar projection, that was the most up to date imagery in most of the mapped areas used by the test while adding buildings.</p>
 <p>The data that I got from Overpass API, a tool used to download data from OSM database, did not provided version  history for the highway ways, so I used the below function in QGIS</p>
-<div class="highlight-SQL notranslate"><div class="highlight"><pre><span></span><span class="k">CASE</span><span class="w"></span>
-<span class="k">WHEN</span><span class="w"> </span><span class="k">length</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="s1">&#39;way/&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="k">END</span><span class="w"></span>
+<div class="highlight-SQL notranslate"><div class="highlight"><pre><span></span><span class="k">CASE</span>
+<span class="k">WHEN</span><span class="w"> </span><span class="k">length</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="ss">&quot;id&quot;</span><span class="p">,</span><span class="s1">&#39;way/&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span>
+<span class="k">END</span>
 </pre></div>
 </div>
 <p>Roads added are Yellow color, while in Green color you can see modified ways that have been adjusted.
 This works by the fact that in OSM, way IDs are auto increment, so the older the ID, the further back in time it was created. The ways I have created had around this value 1088815124, and if we calculate the  length of the ID we get 10.
 The 1 billion node was created 10 months ago, so everything that is in Green is a node created earlier than 10 months ago that was modified in the quality control phase.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="4ba892e1-6ae3-4feb-8a57-e5c7dfc8fe53" name="0b7d4e6c-e928-4de8-9428-78ffd1a66f8f" type="radio">
-</input><label class="sd-tab-label" for="4ba892e1-6ae3-4feb-8a57-e5c7dfc8fe53">
+<input checked="checked" id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
 Map of road age</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id13">
 <img alt="_images/image25.png" src="_images/image25.png" />
@@ -667,8 +569,8 @@ Map of road age</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="25d46128-bf73-43c6-96c9-e1eb664ee18f" name="0b7d4e6c-e928-4de8-9428-78ffd1a66f8f" type="radio">
-</input><label class="sd-tab-label" for="25d46128-bf73-43c6-96c9-e1eb664ee18f">
+<input id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
 Road age in Demba City</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id14">
 <img alt="_images/image17.png" src="_images/image17.png" />
@@ -688,7 +590,7 @@ This happens because of the way JOSM works, if you try to add a node closer than
 </figure>
 </section>
 <section id="speed-of-edits">
-<h2>Speed of edits<a class="headerlink" href="#speed-of-edits" title="Permalink to this headline">#</a></h2>
+<h2>Speed of edits<a class="headerlink" href="#speed-of-edits" title="Permalink to this heading">#</a></h2>
 <p>We will look at the first four mappers who added the most buildings to approximate how many buildings per hour they have added during the project.</p>
 <ul class="simple">
 <li><p>The first added 57k buildings in 25 days = A average of 2280 buildings per day, or 285 buildings per hour (8h/day)</p></li>
@@ -704,11 +606,11 @@ This happens because of the way JOSM works, if you try to add a node closer than
 </figure>
 </section>
 <section id="josm-tips">
-<h2>JOSM tips<a class="headerlink" href="#josm-tips" title="Permalink to this headline">#</a></h2>
+<h2>JOSM tips<a class="headerlink" href="#josm-tips" title="Permalink to this heading">#</a></h2>
 <p>Satellite images are sometimes made at an angle, so when drawing buildings from satellite imagery you will create a building that looks like the imagery from the satellite, but this is not an accurate representation of the ground truth.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="427180a7-80fe-41bf-ade6-ab06712d2efa" name="5ab1a967-1986-4271-9b56-3ab23b23cab4" type="radio">
-</input><label class="sd-tab-label" for="427180a7-80fe-41bf-ade6-ab06712d2efa">
+<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
 Example of building from angled imagery</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id17">
 <img alt="_images/image13.png" src="_images/image13.png" />
@@ -717,8 +619,8 @@ Example of building from angled imagery</label><div class="sd-tab-content docuti
 </figcaption>
 </figure>
 </div>
-<input id="81ee1840-c099-411a-a696-bb222d56e7b6" name="5ab1a967-1986-4271-9b56-3ab23b23cab4" type="radio">
-</input><label class="sd-tab-label" for="81ee1840-c099-411a-a696-bb222d56e7b6">
+<input id="sd-tab-item-10" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-10">
 and now squared</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id18">
 <img alt="_images/image28.png" src="_images/image28.png" />
@@ -732,8 +634,8 @@ and now squared</label><div class="sd-tab-content docutils">
 <p>When adding buildings from multiple imagery sources, first look and try to identify what imagery source is the most up to date. In most of the western world, we would expect buildings to not disappear so fast, so we can identify newer satellite imagery based on the newer buildings, removed forest in one imagery compared to another, new roads, etc. This is harder to do in Congo in the Kasai Health Zones as building tend to dissapear or be moved much more often.</p>
 <p>Let’s take this <a class="reference external" href="https://www.openstreetmap.org/#map=19/-4.596973033288558/22.857390850682826">area as an example</a>. To zoom to a specific location in JOSM, one needs to copy the link above and paste it inside the Jump to Position dialog box</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="bbd66021-eab5-44ee-b4df-7c196fbdc157" name="cca8bc60-1681-468f-8fa6-44d70c056339" type="radio">
-</input><label class="sd-tab-label" for="bbd66021-eab5-44ee-b4df-7c196fbdc157">
+<input checked="checked" id="sd-tab-item-11" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
 JOSM example</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id19">
 <img alt="_images/image12.png" src="_images/image12.png" />
@@ -742,8 +644,8 @@ JOSM example</label><div class="sd-tab-content docutils">
 </figcaption>
 </figure>
 </div>
-<input id="ad196079-899f-4f9b-9c7a-db6320a83e29" name="cca8bc60-1681-468f-8fa6-44d70c056339" type="radio">
-</input><label class="sd-tab-label" for="ad196079-899f-4f9b-9c7a-db6320a83e29">
+<input id="sd-tab-item-12" name="sd-tab-set-5" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
 JOSM example 2</label><div class="sd-tab-content docutils">
 <figure class="align-default" id="id20">
 <img alt="_images/image14.png" src="_images/image14.png" />
@@ -791,7 +693,7 @@ JOSM example 2</label><div class="sd-tab-content docutils">
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -799,50 +701,105 @@ JOSM example 2</label><div class="sd-tab-content docutils">
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="DRC_health.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Kasai Health Zones</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="DRC_health.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kasai Health Zones</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="TCD_refugees.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="TCD_refugees.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Chad refugees</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary">Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-assessment-of-openstreetmap-osm-completeness-in-the-kasai-health-zones">Quantitative assessment of OpenStreetMap (OSM) completeness in the Kasai Health Zones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-and-currency-of-available-imagery-in-base-maps">Quality and currency of available imagery in base maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-to-medium">Low to medium</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-of-map-edits">Quality of map edits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speed-of-edits">Speed of edits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#josm-tips">JOSM tips</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Benjamin P. Stewart<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Benjamin P. Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Nov 15, 2023.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
