@@ -21,7 +21,9 @@ parts:
     - file: data_section4
   - caption: Data assessments
     chapters:
-    - file: Assessment_context
+    - file: data_introductions
+      sections:
+      - file: Assessment_context
     - file: DRC_health
       sections:
       - file: DRC_results

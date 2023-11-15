@@ -20,16 +20,18 @@ Mapping workflow with JOSM editor and a Tasking Manager
 Previous to the mapping process we found data added by other mappers from the OSM community and most of this data was added trough projects from [Humanitarian OpenStreetMap Team](https://www.hotosm.org/).
 
 Some of these data had good quality but in most of the camps data had to be improved to align to the most current imagery and improve the building and road shapes.
-````{tabbed} Baseline Data
+`````{tab-set}
+````{tab-item} Baseline Data
 ```{figure} docs/images/update_chat/post_update_chad_camp_2.png
 Baseline Data
 ```
 ````
-````{tabbed} Updated
+````{tab-item} Updated
 ```{figure} docs/images/update_chat/post_update_chad_camp_3.png
 Data after updating
 ```
 ````
+`````
 
 Although the team relied on the most current imagery basemap (Maxar premium), data were found that did not match with any satellite imagery and according to the source attributes, they were added by local knowledge. These data were not changed and were left as they were found.
 
@@ -53,16 +55,18 @@ Comparison of the Pre-update data VS Post-update data in Treguine Camp
 
 The main difficulty during the mapping was the low quality of the baseline satellite imagery, which was more notable in some camps where the density of the buildings was high or in areas with a lot of trees. 
 
-````{tabbed} Treed
+`````{tab-set}
+````{tab-item} Treed
 ```{figure} docs/images/update_chat/post_update_chad_camp_6.png
 Maxar imagery with trees
 ```
 ````
-````{tabbed} Clear
+````{tab-item} Clear
 ```{figure} docs/images/update_chat/post_update_chad_camp_7.png
 Bing imagery
 ```
 ````
+`````
 ## Post-update stats
 
 At the end of the mapping, the data team completed the mapping of 21 of 22 camps. The table contains the final stats of buildings and roads added/improved per camp.

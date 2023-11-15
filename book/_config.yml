@@ -4,11 +4,12 @@
 title: Geography in FDP
 author: Benjamin P. Stewart
 logo: logo.png
+only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: "off"
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -23,11 +24,18 @@ bibtex_bibfiles:
 repository:
   url: https://github.com/worldbank/Geospatial_FDP # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: false
   use_repository_button: true
+
+#######################################################################################
+# Sphinx settings
+sphinx:  
+  config:
+    html_show_copyright: false
+    html_last_updated_fmt: "%b %d, %Y"
   
